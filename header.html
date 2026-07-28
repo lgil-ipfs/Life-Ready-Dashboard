@@ -1,11 +1,23 @@
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span class="utility-bar-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="7.5" r="1.25" fill="currentColor"/>
+            </svg>
+        </span>
+        <span>Questions about your group plan: <a href="mailto:support@iberianpacific.ca">Contact Your Advisor</a></span>
+        <button class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss">&times;</button>
+    </div>
+</div>
+
 <nav>
     <div class="container nav-content">
         <a href="index.html" class="logo">
-            <img src="assets/logo.svg" alt="Life Ready logo" class="logo-icon">
-            <div class="logo-text-group">
-                <div class="logo-text">Life Ready</div>
-                <div class="logo-subtext">Group Plan Dashboard</div>
-            </div>
+            <img src="assets/logo.png" alt="Life Ready" class="logo-icon">
+            <span class="logo-divider"></span>
+            <span class="logo-subtext">Group Plan Dashboard</span>
         </a>
         <div class="nav-links" id="nav-links">
             <a href="index.html" data-nav="dashboard">Dashboard</a>
@@ -13,12 +25,18 @@
             <a href="group-insurance.html" data-nav="insurance">Group Insurance</a>
             <a href="education.html" data-nav="education">Education</a>
         </div>
+        <form class="nav-search" id="nav-search-form">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" placeholder="Search resources...">
+        </form>
         <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
-        <a href="mailto:support@iberianpacific.ca" class="btn btn-secondary">Contact Support</a>
     </div>
     <div class="nav-overlay" id="nav-overlay"></div>
 </nav>

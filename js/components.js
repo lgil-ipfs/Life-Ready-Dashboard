@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (typeof highlightActiveNav === 'function') {
             highlightActiveNav();
         }
+        if (typeof initUtilityBar === 'function') {
+            initUtilityBar();
+        }
+        if (typeof initNavSearch === 'function') {
+            initNavSearch();
+        }
     });
     loadComponent('footer-placeholder', 'footer.html');
 });
