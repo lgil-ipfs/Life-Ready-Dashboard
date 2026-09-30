@@ -1,0 +1,34 @@
+# Life Ready Learning Hub
+
+> Free, plain-English financial education for Canadians, published by Iberian Pacific Financial Services Inc. (https://iberianpacific.ca) for the Life Ready Facilitated Care community and the public. The site offers articles, short videos, and a free Google Sheets spending plan template covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.
+
+This site is educational only. It is not a group benefits, group investment, or insurance portal, and nothing on it is personalized financial, tax, or legal advice. Questions can be sent to support@iberianpacific.ca.
+
+## Articles
+
+- [How to Build a Budget That Actually Works](https://life-ready-dashboard.vercel.app/article-budgeting-basics): A simple, step-by-step budgeting guide for Canadians: find your real numbers, try the 50/30/20 split, automate your savings, and review monthly.
+- [A Practical Plan for Paying Down Debt](https://life-ready-dashboard.vercel.app/article-debt-management): A step-by-step debt repayment plan for Canadians: list what you owe, compare the avalanche and snowball methods, and avoid common debt traps.
+- [Credit Scores in Canada, Explained](https://life-ready-dashboard.vercel.app/article-credit-scores): What affects your credit score in Canada, why Equifax and TransUnion scores differ, and the simple habits that build good credit over time.
+- [Investing Basics: RRSPs, TFSAs, and Compound Growth](https://life-ready-dashboard.vercel.app/article-investing-basics): How RRSPs and TFSAs work, why employer matching matters, how compound growth builds wealth, and how to choose investments that fit your goals.
+- [Insurance Basics: Health, Dental, Life, and Disability Coverage](https://life-ready-dashboard.vercel.app/article-insurance-basics): A plain-English guide to extended health, dental, life, and disability insurance in Canada, plus how claims and pre-determinations work.
+- [Retirement Planning in Canada: Where to Start](https://life-ready-dashboard.vercel.app/article-retirement-planning): Why starting early beats starting big, how CPP, OAS, RRSPs, and TFSAs fit together, and how to set a realistic retirement savings goal.
+
+## Templates
+
+- [Complete Financial Spending Plan](https://life-ready-dashboard.vercel.app/templates): A free, all-in-one Google Sheet covering everything from your monthly budget to your long-term goals. Tabs: Monthly Spending Plan, Personal Financial Snapshot, Dashboard, Goals Tracker, Accounts, Tax Savings, Budget Link. Direct link: https://docs.google.com/spreadsheets/d/17zQUAbBdKj6JEYIH6UAY_od7iSDD0XhGBIOnqNKUn90/edit?usp=sharing
+
+## Videos
+
+- Budgeting 101: Build Your First Spending Plan (coming soon): A short walkthrough of the 50/30/20 split and how to set up a monthly spending plan using the free template.
+- Debt Payoff Strategies: Avalanche vs. Snowball (coming soon): How the two most popular debt payoff methods work, and how to choose the one you will stick with.
+- How Credit Scores Work in Canada (coming soon): The five factors behind your credit score and the everyday habits that improve it.
+- RRSP vs. TFSA: Which Account First? (coming soon): A side-by-side look at Canada's two most popular savings accounts and when each one makes sense.
+- Insurance Basics in Five Minutes (coming soon): What health, dental, life, and disability coverage actually protect, and how to make a claim.
+- Retirement Planning: Your First Steps (coming soon): How CPP, OAS, and personal savings fit together, and how to pick a starting contribution rate.
+
+## Site sections
+
+- [Life Ready Learning Hub | Free Financial Education in Canada](https://life-ready-dashboard.vercel.app/): Free, plain-English financial education for Canadians: articles, videos, and a free budget template on budgeting, debt, credit, investing, and retirement.
+- [Financial Education Articles & Resources | Life Ready](https://life-ready-dashboard.vercel.app/education): Browse free financial education articles, videos, and templates by topic: budgeting, debt management, credit scores, investing, insurance, and retirement.
+- [Financial Education Videos | Life Ready Learning Hub](https://life-ready-dashboard.vercel.app/videos): Short, free financial education videos on budgeting, paying off debt, credit scores, RRSPs and TFSAs, insurance, and retirement planning in Canada.
+- [Free Budget & Spending Plan Template | Life Ready](https://life-ready-dashboard.vercel.app/templates): Get a free Google Sheets spending plan template with a monthly budget, net worth snapshot, goals tracker, and tax savings tab. No sign-up needed to view.

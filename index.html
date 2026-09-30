@@ -1,113 +1,492 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Ready Group Plan | Member Dashboard</title>
-    <meta name="description" content="Life Ready Group Plan member dashboard: access your group investment account, group insurance, and financial education resources. Administered by Iberian Pacific Financial Services Inc.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<!-- SEO:START -->
+    <title>Life Ready Learning Hub | Free Financial Education in Canada</title>
+    <meta name="description" content="Free, plain-English financial education for Canadians: articles, videos, and a free budget template on budgeting, debt, credit, investing, and retirement.">
+    <link rel="canonical" href="https://life-ready-dashboard.vercel.app/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Iberian Pacific Financial Services Inc.">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Life Ready Learning Hub | Free Financial Education in Canada">
+    <meta property="og:description" content="Free, plain-English financial education for Canadians: articles, videos, and a free budget template on budgeting, debt, credit, investing, and retirement.">
+    <meta property="og:url" content="https://life-ready-dashboard.vercel.app/">
+    <meta property="og:image" content="https://life-ready-dashboard.vercel.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Life Ready Learning Hub | Free Financial Education in Canada">
+    <meta name="twitter:description" content="Free, plain-English financial education for Canadians: articles, videos, and a free budget template on budgeting, debt, credit, investing, and retirement.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.vercel.app/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://iberianpacific.ca/#organization",
+      "name": "Iberian Pacific Financial Services Inc.",
+      "url": "https://iberianpacific.ca",
+      "email": "support@iberianpacific.ca",
+      "telephone": "+1-604-916-8819",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.vercel.app/#website",
+      "url": "https://life-ready-dashboard.vercel.app/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://iberianpacific.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.vercel.app/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.vercel.app/#webpage",
+      "url": "https://life-ready-dashboard.vercel.app/",
+      "name": "Life Ready Learning Hub | Free Financial Education in Canada",
+      "description": "Free, plain-English financial education for Canadians: articles, videos, and a free budget template on budgeting, debt, credit, investing, and retirement.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.vercel.app/#website"
+      },
+      "dateModified": "2026-09-30",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.vercel.app/assets/og-image.png"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://life-ready-dashboard.vercel.app/#articles",
+      "name": "Financial education articles",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://life-ready-dashboard.vercel.app/article-budgeting-basics",
+          "name": "How to Build a Budget That Actually Works"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://life-ready-dashboard.vercel.app/article-debt-management",
+          "name": "A Practical Plan for Paying Down Debt"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://life-ready-dashboard.vercel.app/article-credit-scores",
+          "name": "Credit Scores in Canada, Explained"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://life-ready-dashboard.vercel.app/article-investing-basics",
+          "name": "Investing Basics: RRSPs, TFSAs, and Compound Growth"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://life-ready-dashboard.vercel.app/article-insurance-basics",
+          "name": "Insurance Basics: Health, Dental, Life, and Disability Coverage"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://life-ready-dashboard.vercel.app/article-retirement-planning",
+          "name": "Retirement Planning in Canada: Where to Start"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://life-ready-dashboard.vercel.app/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the Life Ready Learning Hub?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Life Ready Learning Hub is a free financial education website with articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement planning in Canada. It was created by Iberian Pacific Financial Services Inc. for the Life Ready Facilitated Care community and is open to everyone."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it really free? Do I need an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, everything is free and there is no account or sign-up. You can read every article, watch every video, and view the spending plan template without providing any personal information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this financial advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All content is general education to help you understand how money topics work. It does not consider your personal situation, so speak with a qualified financial professional before making decisions about your own finances."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I access my group benefits or investment account here?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Life Ready Learning Hub is an education-only resource and does not connect to any benefits, insurance, or investment account. For questions about an existing account or policy, contact your plan provider directly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I get the free budget template?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free Complete Financial Spending Plan is on the Templates page. It is a view-only Google Sheet with tabs for a monthly spending plan, financial snapshot, dashboard, goals tracker, accounts, and tax savings. You can request your own editable copy directly in Google Sheets."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
 </head>
 <body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span class="utility-bar-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="7.5" r="1.25" fill="currentColor"/>
+            </svg>
+        </span>
+        <span>
+            <span class="utility-bar-full">Free financial education, no sign-up needed: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
 
-    <div id="header-placeholder"></div>
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">Learning Hub</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home" class="active" aria-current="page">Home</a>
+            <a href="/education" data-nav="articles">Articles</a>
+            <a href="/videos" data-nav="videos">Videos</a>
+            <a href="/templates" data-nav="templates">Templates</a>
+        </div>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
 
+<main id="main">
     <header class="hero">
-        <div class="hero-blob"></div>
+        <div class="hero-blob" aria-hidden="true"></div>
         <div class="container">
-            <span class="hero-eyebrow">Life Ready Group Plan</span>
-            <h1>Welcome to your group plan dashboard.</h1>
-            <p>Everything your Life Ready group plan gives you access to, all in one place: your group investment account, your group insurance coverage, and financial education built for your team.</p>
+            <span class="hero-eyebrow">Free Financial Education</span>
+            <h1>Practical money lessons for every stage of life.</h1>
+            <p>The Life Ready Learning Hub offers free, plain-English articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement in Canada. No account, no sign-up, no sales pitch.</p>
             <div class="hero-btns">
-                <a href="education.html" class="btn btn-primary">Explore Education Hub</a>
-                <a href="mailto:support@iberianpacific.ca" class="btn btn-outline">Contact Your Advisor</a>
+                <a href="/education" class="btn btn-primary">Browse Articles</a>
+                <a href="/templates" class="btn btn-outline">Get the Free Template</a>
             </div>
         </div>
     </header>
 
-    <section class="section-padding">
+    <section class="section-padding" aria-labelledby="ways-heading">
         <div class="container">
             <div class="section-heading">
-                <span class="subheading">Your Group Plan</span>
-                <h2>Everything in one place</h2>
-                <p>Three things your Life Ready group plan gives you access to, and where to find each one.</p>
+                <span class="subheading">Start Learning</span>
+                <h2 id="ways-heading">Three ways to build your money skills</h2>
+                <p>Read, watch, or get hands-on. Every resource is free and written for real life, not finance textbooks.</p>
             </div>
 
             <div class="connector-grid">
                 <div class="connector-card">
-                    <div class="connector-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 17L9 11L13 15L21 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M15 7H21V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <span class="connector-tag">Connector</span>
-                    <h3>Group Investment Account</h3>
-                    <p>View your group RRSP / investment account balance, contributions, and statements through your plan provider.</p>
-                    <a href="investment-account.html" class="btn btn-primary btn-block">Access Account</a>
-                </div>
-
-                <div class="connector-card">
-                    <div class="connector-icon">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3L19 6V11C19 15.4 16.1 19.4 12 21C7.9 19.4 5 15.4 5 11V6L12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                            <path d="M9 11.5L11 13.5L15 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <span class="connector-tag">Connector</span>
-                    <h3>Group Insurance</h3>
-                    <p>Check your coverage, submit claims, and find plan documents for your Life Ready group insurance benefits.</p>
-                    <a href="group-insurance.html" class="btn btn-primary btn-block">Access Coverage</a>
-                </div>
-
-                <div class="connector-card">
-                    <div class="connector-icon">
+                    <div class="connector-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 6C10.5 4.8 8 4 4 4V17C8 17 10.5 17.8 12 19C13.5 17.8 16 17 20 17V4C16 4 13.5 4.8 12 6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                             <path d="M12 6V19" stroke="currentColor" stroke-width="1.8"/>
                         </svg>
                     </div>
-                    <span class="connector-tag">Resources</span>
-                    <h3>Education Hub</h3>
-                    <p>Plain-English articles and resources on budgeting, debt, investing, insurance, and retirement.</p>
-                    <a href="education.html" class="btn btn-primary btn-block">Start Learning</a>
+                    <span class="connector-tag">Read</span>
+                    <h3>Articles</h3>
+                    <p>Short, practical guides on budgeting, paying off debt, credit scores, RRSPs and TFSAs, insurance, and retirement.</p>
+                    <a href="/education" class="btn btn-primary btn-block">Browse Articles</a>
+                </div>
+
+                <div class="connector-card">
+                    <div class="connector-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M10 9.5V14.5L14.5 12L10 9.5Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span class="connector-tag">Watch</span>
+                    <h3>Videos</h3>
+                    <p>Short video lessons that walk through each topic step by step, so you can learn on the go. New videos are being added.</p>
+                    <a href="/videos" class="btn btn-primary btn-block">Visit the Video Library</a>
+                </div>
+
+                <div class="connector-card">
+                    <div class="connector-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M4 9H20M4 15H20M10 3V21" stroke="currentColor" stroke-width="1.8"/>
+                        </svg>
+                    </div>
+                    <span class="connector-tag">Do</span>
+                    <h3>Templates</h3>
+                    <p>A free Google Sheets spending plan with a monthly budget, net worth snapshot, goals tracker, and tax savings tab.</p>
+                    <a href="/templates" class="btn btn-primary btn-block">Get the Free Template</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding section-soft">
+    <section class="section-padding section-soft" aria-labelledby="topics-heading">
+        <div class="container">
+            <div class="section-heading">
+                <span class="subheading">Browse by Topic</span>
+                <h2 id="topics-heading">What do you want to learn about?</h2>
+            </div>
+            <ul class="topic-grid">
+                <li><a href="/education#budgeting"><strong>Budgeting</strong><span>Make a spending plan that fits your paycheque</span></a></li>
+                <li><a href="/education#debt"><strong>Debt Management</strong><span>Avalanche, snowball, and getting unstuck</span></a></li>
+                <li><a href="/education#credit"><strong>Credit</strong><span>How credit scores work in Canada</span></a></li>
+                <li><a href="/education#investing"><strong>Saving &amp; Investing</strong><span>RRSPs, TFSAs, and compound growth</span></a></li>
+                <li><a href="/education#insurance"><strong>Insurance</strong><span>Health, dental, life, and disability basics</span></a></li>
+                <li><a href="/education#retirement"><strong>Retirement</strong><span>CPP, OAS, and saving for later</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-padding" aria-labelledby="latest-heading">
+        <div class="container">
+            <div class="section-heading">
+                <span class="subheading">Popular Guides</span>
+                <h2 id="latest-heading">Start with these articles</h2>
+            </div>
+            <div class="resource-grid">
+<!-- LATEST:START -->
+<a href="/article-budgeting-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>How to Build a Budget That Actually Works</h3>
+        <p>A simple framework for putting every paycheque to work, including the 50/30/20 rule and how to automate savings.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-debt-management" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>A Practical Plan for Paying Down Debt</h3>
+        <p>How to prioritize what you owe, compare the avalanche and snowball methods, and avoid common traps.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-credit-scores" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>Credit Scores in Canada, Explained</h3>
+        <p>What actually affects your credit score, how Canada's two bureaus work, and habits that build credit over time.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-investing-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>Investing Basics: RRSPs, TFSAs, and Compound Growth</h3>
+        <p>How RRSPs and TFSAs differ, why an employer match is worth capturing, and how compounding works in your favour.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-insurance-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>Insurance Basics: Health, Dental, Life, and Disability Coverage</h3>
+        <p>A plain-English guide to extended health, dental, life, and disability coverage, and how to actually use it.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-retirement-planning" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>Retirement Planning in Canada: Where to Start</h3>
+        <p>Why starting early matters more than starting big, and how CPP, OAS, RRSPs, and TFSAs fit together.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<!-- LATEST:END -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding section-soft" aria-labelledby="about-heading">
         <div class="container">
             <div class="detail-grid">
                 <div class="detail-card">
-                    <h2>About this dashboard</h2>
-                    <p>This dashboard was built for Life Ready Facilitated Care team members by Iberian Pacific Financial Services Inc., your group plan advisor. It brings together the pieces of your group plan that used to live in separate emails and logins into one place.</p>
-                    <h3>What's included</h3>
+                    <h2 id="about-heading">About the Life Ready Learning Hub</h2>
+                    <p>The Life Ready Learning Hub is a free financial education resource created for the Life Ready Facilitated Care community by Iberian Pacific Financial Services Inc., a Canadian financial services firm. Anyone is welcome to use it.</p>
+                    <h3>What you'll find here</h3>
                     <ul>
-                        <li>A direct link to your group investment account provider</li>
-                        <li>A direct link to your group insurance provider</li>
-                        <li>Plain-English education on budgeting, debt, credit, investing, and retirement</li>
+                        <li>Plain-English articles on budgeting, debt, credit, investing, insurance, and retirement</li>
+                        <li>Short video lessons on the same topics</li>
+                        <li>A free, view-only Google Sheets spending plan template</li>
                     </ul>
-                    <p>Your Iberian Pacific advisor manages the relationship with both providers on Life Ready's behalf, and is available any time you have a question about your plan.</p>
+                    <p>This hub is for education only. It is not a benefits, insurance, or investment account portal, and nothing here is personalized financial advice.</p>
                     <div class="mission-box">
                         <h3>Our Promise</h3>
-                        <p>Straightforward access to your plan, and a straightforward answer whenever you have a question about it.</p>
+                        <p>Clear, honest money education that respects your time, with no jargon, no judgement, and no sales pitch.</p>
                     </div>
                 </div>
                 <div class="cta-card">
-                    <h3>Talk to your advisor</h3>
-                    <p>Enrollment, claims, contribution changes, or just a general question, reach out any time.</p>
-                    <a href="mailto:support@iberianpacific.ca" class="btn btn-primary btn-block">Email Support</a>
+                    <h3>Have a question?</h3>
+                    <p>Can't find what you're looking for, or want a topic covered? Let us know.</p>
+                    <a href="mailto:support@iberianpacific.ca" class="btn btn-primary btn-block">Email Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="footer-placeholder"></div>
+    <section class="section-padding" aria-labelledby="faq-heading">
+        <div class="container faq">
+            <div class="section-heading">
+                <span class="subheading">FAQ</span>
+                <h2 id="faq-heading">Frequently asked questions</h2>
+            </div>
+            <details class="faq-item">
+                <summary>What is the Life Ready Learning Hub?</summary>
+                <div class="faq-answer"><p>The Life Ready Learning Hub is a free financial education website with articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement planning in Canada. It was created by Iberian Pacific Financial Services Inc. for the Life Ready Facilitated Care community and is open to everyone.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>Is it really free? Do I need an account?</summary>
+                <div class="faq-answer"><p>Yes, everything is free and there is no account or sign-up. You can read every article, watch every video, and view the spending plan template without providing any personal information.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>Is this financial advice?</summary>
+                <div class="faq-answer"><p>No. All content is general education to help you understand how money topics work. It does not consider your personal situation, so speak with a qualified financial professional before making decisions about your own finances.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>Can I access my group benefits or investment account here?</summary>
+                <div class="faq-answer"><p>No. The Life Ready Learning Hub is an education-only resource and does not connect to any benefits, insurance, or investment account. For questions about an existing account or policy, contact your plan provider directly.</p></div>
+            </details>
+            <details class="faq-item">
+                <summary>Where can I get the free budget template?</summary>
+                <div class="faq-answer"><p>The free Complete Financial Spending Plan is on the <a href="/templates">Templates page</a>. It is a view-only Google Sheet with tabs for a monthly spending plan, financial snapshot, dashboard, goals tracker, accounts, and tax savings. You can request your own editable copy directly in Google Sheets.</p></div>
+            </details>
+        </div>
+    </section>
+</main>
 
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/utility-bar.js"></script>
-    <script src="js/nav-search.js"></script>
-    <script src="js/components.js"></script>
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">Learning Hub</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Iberian Pacific Financial Services Inc.</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Video Library</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:support@iberianpacific.ca">support@iberianpacific.ca</a></li>
+                    <li><a href="tel:+16049168819">604-916-8819</a></li>
+                    <li><a href="https://iberianpacific.ca" target="_blank" rel="noopener">iberianpacific.ca</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource built and operated by Iberian Pacific Financial Services Inc. ("Iberian Pacific") for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are owned and managed by Iberian Pacific and shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Created by Iberian Pacific Financial Services Inc.</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="/js/main.js" defer></script>
 </body>
 </html>

@@ -1,71 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building a Budget That Actually Works | Life Ready Group Plan</title>
-    <meta name="description" content="A simple budgeting framework for Life Ready team members.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<!-- SEO:START -->
+    <title>How to Build a Budget That Actually Works | Life Ready</title>
+    <meta name="description" content="A simple, step-by-step budgeting guide for Canadians: find your real numbers, try the 50/30/20 split, automate your savings, and review monthly.">
+    <link rel="canonical" href="https://life-ready-dashboard.vercel.app/article-budgeting-basics">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Iberian Pacific Financial Services Inc.">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Build a Budget That Actually Works | Life Ready">
+    <meta property="og:description" content="A simple, step-by-step budgeting guide for Canadians: find your real numbers, try the 50/30/20 split, automate your savings, and review monthly.">
+    <meta property="og:url" content="https://life-ready-dashboard.vercel.app/article-budgeting-basics">
+    <meta property="og:image" content="https://life-ready-dashboard.vercel.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta property="article:published_time" content="2026-07-28">
+    <meta property="article:modified_time" content="2026-09-30">
+    <meta property="article:section" content="Budgeting">
+    <meta property="article:tag" content="how to make a budget">
+    <meta property="article:tag" content="50/30/20 rule">
+    <meta property="article:tag" content="budgeting for beginners">
+    <meta property="article:tag" content="monthly budget Canada">
+    <meta property="article:tag" content="spending plan">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Build a Budget That Actually Works | Life Ready">
+    <meta name="twitter:description" content="A simple, step-by-step budgeting guide for Canadians: find your real numbers, try the 50/30/20 split, automate your savings, and review monthly.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.vercel.app/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://iberianpacific.ca/#organization",
+      "name": "Iberian Pacific Financial Services Inc.",
+      "url": "https://iberianpacific.ca",
+      "email": "support@iberianpacific.ca",
+      "telephone": "+1-604-916-8819",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.vercel.app/#website",
+      "url": "https://life-ready-dashboard.vercel.app/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://iberianpacific.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.vercel.app/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.vercel.app/article-budgeting-basics#webpage",
+      "url": "https://life-ready-dashboard.vercel.app/article-budgeting-basics",
+      "name": "How to Build a Budget That Actually Works | Life Ready",
+      "description": "A simple, step-by-step budgeting guide for Canadians: find your real numbers, try the 50/30/20 split, automate your savings, and review monthly.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.vercel.app/#website"
+      },
+      "dateModified": "2026-09-30",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.vercel.app/assets/og-image.png"
+      },
+      "breadcrumb": {
+        "@id": "https://life-ready-dashboard.vercel.app/article-budgeting-basics#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://life-ready-dashboard.vercel.app/article-budgeting-basics#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://life-ready-dashboard.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Articles",
+          "item": "https://life-ready-dashboard.vercel.app/education"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Budgeting",
+          "item": "https://life-ready-dashboard.vercel.app/education#budgeting"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "How to Build a Budget That Actually Works"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://life-ready-dashboard.vercel.app/article-budgeting-basics#article",
+      "headline": "How to Build a Budget That Actually Works",
+      "description": "A simple, step-by-step budgeting guide for Canadians: find your real numbers, try the 50/30/20 split, automate your savings, and review monthly.",
+      "image": "https://life-ready-dashboard.vercel.app/assets/og-image.png",
+      "datePublished": "2026-07-28",
+      "dateModified": "2026-09-30",
+      "author": {
+        "@id": "https://iberianpacific.ca/#organization"
+      },
+      "publisher": {
+        "@id": "https://iberianpacific.ca/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://life-ready-dashboard.vercel.app/article-budgeting-basics#webpage"
+      },
+      "articleSection": "Budgeting",
+      "keywords": "how to make a budget, 50/30/20 rule, budgeting for beginners, monthly budget Canada, spending plan",
+      "timeRequired": "PT6M",
+      "inLanguage": "en-CA",
+      "isAccessibleForFree": true,
+      "educationalLevel": "Beginner",
+      "learningResourceType": "Article",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Budgeting (personal finance)"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://life-ready-dashboard.vercel.app/article-budgeting-basics#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the 50/30/20 budget rule?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 50/30/20 rule divides your take-home pay into 50% for needs like housing and groceries, 30% for wants like dining out and hobbies, and 20% for savings and extra debt payments. It is a starting benchmark rather than a strict rule, especially in high-cost Canadian cities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I budget using my gross salary or take-home pay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Budget with your take-home pay, the amount deposited after taxes and payroll deductions. That is the money you actually have available to spend and save each month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I review my budget?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once a month is enough for most people. A short monthly review comparing planned and actual spending catches problems early without the burnout of tracking every purchase daily."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
 </head>
 <body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span class="utility-bar-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="12" cy="7.5" r="1.25" fill="currentColor"/>
+            </svg>
+        </span>
+        <span>
+            <span class="utility-bar-full">Free financial education, no sign-up needed: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
 
-    <div id="header-placeholder"></div>
-
-    <header class="page-header">
-        <div class="container">
-            <p class="breadcrumb"><a href="index.html">Dashboard</a> / <a href="education.html">Education Hub</a> / Budgeting</p>
-            <span class="subheading">Budgeting</span>
-            <h1>Building a Budget That Actually Works</h1>
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">Learning Hub</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home">Home</a>
+            <a href="/education" data-nav="articles" class="active" aria-current="page">Articles</a>
+            <a href="/videos" data-nav="videos">Videos</a>
+            <a href="/templates" data-nav="templates">Templates</a>
         </div>
-    </header>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
 
-    <section class="section-padding">
-        <div class="container article-content">
-            <div class="article-meta">
-                <span>6 min read</span>
-                <span>Budgeting</span>
+<main id="main">
+    <article>
+        <header class="page-header">
+            <div class="container">
+<!-- BREADCRUMB:START -->
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/education">Articles</a></li><li><a href="/education#budgeting">Budgeting</a></li><li aria-current="page">How to Build a Budget That Actually Works</li></ol></nav>
+<!-- BREADCRUMB:END -->
+                <span class="subheading">Budgeting</span>
+                <h1>How to Build a Budget That Actually Works</h1>
+                <p>A budget is simply a plan for your money. Here is a simple, four-step way to build one you will actually keep.</p>
             </div>
+        </header>
 
-            <p>A budget isn't a punishment. It's just a plan for your money so it does what you want it to do, instead of quietly disappearing. Most budgets fail not because people are bad with money, but because the budget itself is too complicated to keep up with. Here's a simpler way to think about it.</p>
+        <div class="section-padding section-tight-top">
+            <div class="container article-content">
+<!-- ARTICLEMETA:START -->
+<div class="article-meta">
+    <span><a href="/education#budgeting">Budgeting</a></span>
+    <span>6 min read</span>
+    <span>Updated <time datetime="2026-09-30">September 30, 2026</time></span>
+    <span>By <a href="https://iberianpacific.ca" rel="author">Iberian Pacific Financial Services Inc.</a></span>
+</div>
+<!-- ARTICLEMETA:END -->
+                <aside class="key-takeaways" aria-labelledby="takeaways-heading">
+                    <h2 id="takeaways-heading">Key takeaways</h2>
+                    <ul>
+                        <li>Build your budget from your <strong>real</strong> numbers: recent pay stubs and one to three months of bank and credit card statements.</li>
+                        <li>The <strong>50/30/20 rule</strong> splits take-home pay into 50% needs, 30% wants, and 20% savings and extra debt payments. Use it as a benchmark, not a strict rule.</li>
+                        <li><strong>Automate</strong> savings and bills on payday so your budget does not depend on willpower.</li>
+                        <li>A <strong>15-minute monthly review</strong> is usually enough. You do not need to track every coffee.</li>
+                    </ul>
+                </aside>
 
-            <h2>Start with your real numbers</h2>
-            <p>Before you build a budget, you need to know two things: what actually comes in, and what actually goes out. Pull up your last two or three pay stubs and your last month of bank/credit card statements. Don't estimate, use the real numbers, even the embarrassing ones.</p>
+                <p>A budget isn't a punishment. It's just a plan for your money so it does what you want it to do, instead of quietly disappearing. Most budgets fail not because people are bad with money, but because the budget itself is too complicated to keep up with. Here's a simpler way to think about it.</p>
 
-            <h2>Try the 50/30/20 split as a starting point</h2>
-            <p>A widely used rule of thumb splits your take-home pay into three buckets:</p>
-            <ul>
-                <li><strong>50% Needs:</strong> rent, groceries, utilities, transportation, minimum debt payments</li>
-                <li><strong>30% Wants:</strong> dining out, subscriptions, hobbies, travel</li>
-                <li><strong>20% Savings &amp; extra debt payments:</strong> emergency fund, group investment account contributions, extra payments on debt</li>
-            </ul>
-            <p>Your exact split won't be perfect. Rent alone can blow past 50% in many Canadian cities. Treat this as a starting point to compare yourself against, not a strict rule.</p>
+                <h2>Step 1: Start with your real numbers</h2>
+                <p>Before you build a budget, you need to know two things: what actually comes in, and what actually goes out. Pull up your last two or three pay stubs and your last month of bank and credit card statements. Don't estimate. Use the real numbers, even the embarrassing ones.</p>
+                <p>Use your <strong>take-home pay</strong> (after tax and payroll deductions), not your salary. That is the money you actually have to work with.</p>
 
-            <h2>Automate what you can</h2>
-            <p>The budgets that survive contact with real life are the ones that don't rely on willpower every single day. Where possible:</p>
-            <ol>
-                <li>Set up automatic transfers to savings the day you get paid, not at the end of the month</li>
-                <li>Use payroll deductions for your group investment account contributions if your plan offers them</li>
-                <li>Put recurring bills on autopay so you avoid late fees</li>
-            </ol>
+                <h2>Step 2: Try the 50/30/20 split as a starting point</h2>
+                <p>The 50/30/20 rule is a widely used rule of thumb that splits your take-home pay into three buckets:</p>
+                <ul>
+                    <li><strong>50% Needs:</strong> rent or mortgage, groceries, utilities, transportation, insurance, and minimum debt payments</li>
+                    <li><strong>30% Wants:</strong> dining out, subscriptions, hobbies, and travel</li>
+                    <li><strong>20% Savings and extra debt payments:</strong> an emergency fund, RRSP or TFSA contributions, workplace savings plans, and extra payments on debt</li>
+                </ul>
+                <p>For example, on $3,500 a month of take-home pay, 50/30/20 works out to about $1,750 for needs, $1,050 for wants, and $700 for savings and extra debt payments.</p>
+                <p>Your exact split won't be perfect. Rent alone can blow past 50% in many Canadian cities. Treat this as a benchmark to compare yourself against, not a rule you have failed if you miss.</p>
 
-            <h2>Review monthly, not daily</h2>
-            <p>You don't need to track every coffee. A 15-minute check-in once a month, comparing what you planned to spend against what actually happened, is usually enough to catch problems early and adjust before they become stressful.</p>
+                <h2>Step 3: Automate what you can</h2>
+                <p>The budgets that survive real life are the ones that don't rely on willpower every single day. Where possible:</p>
+                <ol>
+                    <li>Set up automatic transfers to savings on the day you get paid, not at the end of the month</li>
+                    <li>Use payroll deductions for any workplace savings plan your employer offers</li>
+                    <li>Put recurring bills on autopay so you avoid late fees and interest</li>
+                </ol>
 
-            <h3>A quick way to start this week</h3>
-            <p>Pick one category you suspect is bigger than it should be (subscriptions and food delivery are common culprits), track it for two weeks, and decide if it matches your priorities. Small, specific changes tend to stick better than an all-at-once overhaul.</p>
+                <h2>Step 4: Review monthly, not daily</h2>
+                <p>You don't need to track every coffee. A 15-minute check-in once a month, comparing what you planned to spend against what actually happened, is usually enough to catch problems early and adjust before they become stressful.</p>
 
-            <div class="article-disclaimer">
-                This article is provided for educational and informational purposes only and does not constitute financial, investment, tax, or legal advice. Always consult a qualified financial professional before making financial decisions. Have questions about your Life Ready group plan specifically? <a href="mailto:support@iberianpacific.ca" style="color: var(--primary); font-weight: 600;">Contact your Iberian Pacific advisor</a>.
+                <h3>A quick way to start this week</h3>
+                <p>Pick one category you suspect is bigger than it should be (subscriptions and food delivery are common culprits), track it for two weeks, and decide if it matches your priorities. Small, specific changes tend to stick better than an all-at-once overhaul. The free <a href="/templates">Complete Financial Spending Plan template</a> gives you a ready-made place to do this.</p>
+
+                <section class="faq" aria-labelledby="faq-heading">
+                    <h2 id="faq-heading">Frequently asked questions</h2>
+                    <details class="faq-item">
+                        <summary>What is the 50/30/20 budget rule?</summary>
+                        <div class="faq-answer"><p>The 50/30/20 rule divides your take-home pay into 50% for needs like housing and groceries, 30% for wants like dining out and hobbies, and 20% for savings and extra debt payments. It is a starting benchmark rather than a strict rule, especially in high-cost Canadian cities.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Should I budget using my gross salary or take-home pay?</summary>
+                        <div class="faq-answer"><p>Budget with your take-home pay, the amount deposited after taxes and payroll deductions. That is the money you actually have available to spend and save each month.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How often should I review my budget?</summary>
+                        <div class="faq-answer"><p>Once a month is enough for most people. A short monthly review comparing planned and actual spending catches problems early without the burnout of tracking every purchase daily.</p></div>
+                    </details>
+                </section>
+
+                <div class="article-disclaimer">
+                    This article is provided for general educational and informational purposes only and does not constitute financial, investment, tax, insurance, or legal advice. Rules, limits, and rates can change. Always consult a qualified professional about your own situation before making financial decisions. Questions or topic ideas? Email <a href="mailto:support@iberianpacific.ca">support@iberianpacific.ca</a>.
+                </div>
+
+<!-- RELATED:START -->
+<aside class="template-cta" aria-label="Free template">
+    <div>
+        <span class="subheading">Free Template</span>
+        <h2>Put this into practice with the Complete Financial Spending Plan</h2>
+        <p>A free Google Sheet with a monthly budget, net worth snapshot, goals tracker, and more.</p>
+    </div>
+    <a href="/templates" class="btn btn-primary">Get the Free Template</a>
+</aside>
+<section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep learning</h2>
+    <div class="resource-grid">
+<a href="/article-debt-management" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>A Practical Plan for Paying Down Debt</h3>
+        <p>How to prioritize what you owe, compare the avalanche and snowball methods, and avoid common traps.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-investing-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>Investing Basics: RRSPs, TFSAs, and Compound Growth</h3>
+        <p>How RRSPs and TFSAs differ, why an employer match is worth capturing, and how compounding works in your favour.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/article-credit-scores" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>Credit Scores in Canada, Explained</h3>
+        <p>What actually affects your credit score, how Canada's two bureaus work, and habits that build credit over time.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+    </div>
+</section>
+<!-- RELATED:END -->
             </div>
         </div>
-    </section>
+    </article>
+</main>
 
-    <div id="footer-placeholder"></div>
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">Learning Hub</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Iberian Pacific Financial Services Inc.</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Video Library</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:support@iberianpacific.ca">support@iberianpacific.ca</a></li>
+                    <li><a href="tel:+16049168819">604-916-8819</a></li>
+                    <li><a href="https://iberianpacific.ca" target="_blank" rel="noopener">iberianpacific.ca</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/utility-bar.js"></script>
-    <script src="js/nav-search.js"></script>
-    <script src="js/components.js"></script>
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource built and operated by Iberian Pacific Financial Services Inc. ("Iberian Pacific") for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are owned and managed by Iberian Pacific and shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Created by Iberian Pacific Financial Services Inc.</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="/js/main.js" defer></script>
 </body>
 </html>
