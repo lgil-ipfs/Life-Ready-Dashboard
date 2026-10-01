@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO:START -->
+    <title>Free Monthly Budget Calculator (Canada) | Life Ready</title>
+    <meta name="description" content="Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.">
+    <link rel="canonical" href="https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Leigh Grant Financial">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Monthly Budget Calculator (Canada) | Life Ready">
+    <meta property="og:description" content="Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.">
+    <meta property="og:url" content="https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget">
+    <meta property="og:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Monthly Budget Calculator (Canada) | Life Ready">
+    <meta name="twitter:description" content="Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/calculators.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://www.leighgrant.ca/#organization",
+      "name": "Leigh Grant Financial",
+      "url": "https://www.leighgrant.ca",
+      "email": "leigh@leighgrant.ca",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.lucas-gil.workers.dev/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget#webpage",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget",
+      "name": "Free Monthly Budget Calculator (Canada) | Life Ready",
+      "description": "Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website"
+      },
+      "dateModified": "2026-10-01",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png"
+      },
+      "breadcrumb": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculators",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Budget Builder"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget#app",
+      "name": "Monthly Budget Builder",
+      "description": "Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (runs in a web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      },
+      "inLanguage": "en-CA",
+      "author": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
+      }
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
+</head>
+<body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span>
+            <span class="utility-bar-full">Financial information at your fingertips: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
+
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">By Leigh Grant Financial</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home">Home</a>
+            <a href="/education" data-nav="articles">Articles</a>
+            <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
+            <a href="/calculators" data-nav="calculators" class="active" aria-current="page">Calculators</a>
+            <a href="/templates" data-nav="templates">Templates</a>
+        </div>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
+
+<main id="main">
+    <header class="page-header">
+        <div class="container">
+<!-- BREADCRUMB:START -->
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/calculators">Calculators</a></li><li aria-current="page">Budget Builder</li></ol></nav>
+<!-- BREADCRUMB:END -->
+            <span class="subheading">Free Calculator</span>
+            <h1>Monthly Budget Builder</h1>
+            <p>Enter your monthly income and expenses to see where you stand, compare your housing costs against benchmarks for where you live, and get personalized insights.</p>
+<!-- CALCPILLS:START -->
+<div class="calc-hero-pills"><span class="calc-hero-pill">City-Adjusted Benchmarks</span><span class="calc-hero-pill">Smart Insights</span><span class="calc-hero-pill">PDF Export</span></div>
+<!-- CALCPILLS:END -->
+        </div>
+    </header>
+
+    <section class="section-padding section-tight-top">
+        <div class="container">
+            <div class="budget-builder" id="budget-pdf-area">
+                <div id="step-quiz" class="step-container active">
+                    <div class="quiz-card">
+                        <span class="subheading">Step 1 of 2</span>
+                        <h2>Where do you live?</h2>
+                        <p>This sets a realistic housing benchmark for your area.</p>
+                        <div class="quiz-options">
+                            <button type="button" class="quiz-opt" data-tier="tier1"><h3>Major city</h3><p>Toronto, Vancouver, Victoria, and surrounding areas</p></button>
+                            <button type="button" class="quiz-opt" data-tier="tier2"><h3>Mid-size city</h3><p>Ottawa, Calgary, Edmonton, Montreal, Halifax</p></button>
+                            <button type="button" class="quiz-opt" data-tier="tier3"><h3>Smaller city or town</h3><p>Smaller centres and rural communities</p></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="step-builder" class="step-container">
+                    <button type="button" class="back-step" id="back-step">&larr; Change location</button>
+                    <div class="budget-grid">
+                        <div>
+                            <div class="input-group-card">
+                                <h2>Monthly income</h2>
+                                <p class="card-hint">Use your average monthly take-home amounts (after tax and deductions).</p>
+                            <div class="field-row">
+                                <label for="in-pay">Your take-home pay</label>
+                                <input type="number" id="in-pay" placeholder="0" min="0" class="inc-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="in-partner">Partner or second income (take-home)</label>
+                                <input type="number" id="in-partner" placeholder="0" min="0" class="inc-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="in-side">Side income or self-employment</label>
+                                <input type="number" id="in-side" placeholder="0" min="0" class="inc-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="in-benefits">Government benefits (e.g. Canada Child Benefit)</label>
+                                <input type="number" id="in-benefits" placeholder="0" min="0" class="inc-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="in-other">Other income</label>
+                                <input type="number" id="in-other" placeholder="0" min="0" class="inc-input" inputmode="decimal">
+                            </div>
+                            </div>
+                            <div class="input-group-card">
+                                <h2>Monthly expenses</h2>
+                                <p class="card-hint">Estimate what you spend in a typical month.</p>
+                            <div class="field-row">
+                                <label for="ex-housing">Rent or mortgage payment</label>
+                                <input type="number" id="ex-housing" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-utilities">Utilities (hydro, heat, water)</label>
+                                <input type="number" id="ex-utilities" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-groceries">Groceries</label>
+                                <input type="number" id="ex-groceries" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-dining">Eating out and takeout</label>
+                                <input type="number" id="ex-dining" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-transport">Transportation (car, gas, transit)</label>
+                                <input type="number" id="ex-transport" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-comms">Phone and internet</label>
+                                <input type="number" id="ex-comms" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-insurance">Insurance (home, tenant, auto, life)</label>
+                                <input type="number" id="ex-insurance" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-childcare">Childcare and kids' activities</label>
+                                <input type="number" id="ex-childcare" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-subs">Subscriptions and memberships</label>
+                                <input type="number" id="ex-subs" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-debt">Debt payments (credit cards, loans)</label>
+                                <input type="number" id="ex-debt" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-care">Personal care and health</label>
+                                <input type="number" id="ex-care" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-fun">Entertainment and hobbies</label>
+                                <input type="number" id="ex-fun" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-savings">Savings and investing (RRSP, TFSA, emergency fund)</label>
+                                <input type="number" id="ex-savings" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-other">Other expenses</label>
+                                <input type="number" id="ex-other" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="results-sticky">
+                                <div id="status-display" class="status-hero positive" aria-live="polite">
+                                    <div class="status-label" id="status-label">Monthly surplus</div>
+                                    <div class="status-value" id="status-value">$0</div>
+                                </div>
+                                <div class="viz-toggle" role="tablist" aria-label="Choose a chart">
+                                    <button type="button" class="viz-btn active" data-viz="donut" role="tab" aria-selected="true">Breakdown</button>
+                                    <button type="button" class="viz-btn" data-viz="bench" role="tab" aria-selected="false">vs. Benchmark</button>
+                                    <button type="button" class="viz-btn" data-viz="flow" role="tab" aria-selected="false">Money Flow</button>
+                                </div>
+                                <div class="viz-container">
+                                    <div id="viz-donut"><canvas id="donutChart" role="img" aria-label="Spending by category"></canvas></div>
+                                    <div id="viz-bench" hidden>
+                                        <h3>Your spending as a share of income</h3>
+                                        <canvas id="benchChart" role="img" aria-label="Spending compared with benchmarks"></canvas>
+                                    </div>
+                                    <div id="viz-flow" hidden>
+                                        <div class="flow-card">
+                                            <div class="flow-col"><div class="flow-label">Income</div><div class="flow-val" id="flow-in">$0</div></div>
+                                            <div class="flow-arrow" aria-hidden="true">&rarr;</div>
+                                            <div class="flow-col"><div class="flow-label">Expenses</div><div class="flow-val" id="flow-out">$0</div></div>
+                                        </div>
+                                        <div style="text-align: center; padding-top: 20px; border-top: 1px solid var(--border);">
+                                            <div class="flow-label">Left over each month</div>
+                                            <div class="flow-val" id="flow-rate">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="what-if-box">
+                                    <h3>A simple "what if"</h3>
+                                    <p>What if I cut eating out by <strong id="what-if-val">$50</strong> a month?</p>
+                                    <input type="range" min="0" max="500" value="50" step="10" class="custom-slider" id="what-if-slider" aria-label="Amount to cut from eating out">
+                                    <p>New monthly result: <strong id="what-if-result">$0</strong></p>
+                                </div>
+                                <button type="button" class="btn btn-primary export-btn" id="export-btn">Save PDF Summary</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insights-card">
+                        <h2>Smart insights</h2>
+                        <div id="insights-list"></div>
+                    </div>
+                </div>
+                <p class="calc-disclaimer">Benchmarks are general guides, not rules. This tool is for educational purposes only and does not constitute financial advice. Prefer a spreadsheet? Try the free <a href="/templates">spending plan template</a>.</p>
+            </div>
+
+<!-- CALCRELATED:START -->
+<section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep learning</h2>
+    <div class="resource-grid">
+<a href="/article-budgeting-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>How to Build a Budget That Actually Works</h3>
+        <p>A simple framework for putting every paycheque to work, including the 50/30/20 rule and how to automate savings.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/calc-mortgage" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Home Buying</span>
+        <h3>Mortgage Repayment Calculator &amp; Comparison Tool</h3>
+        <p>Compare two mortgages side by side: rate, amortization, payment frequency, and prepayments, with Canadian semi-annual compounding.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+<a href="/calc-net-worth" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Net Worth</span>
+        <h3>Net Worth Calculator</h3>
+        <p>Add up what you own and what you owe, including your home and mortgage, to see your net worth and track it over time.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+    </div>
+</section>
+<!-- CALCRELATED:END -->
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">By Leigh Grant Financial</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Leigh Grant Financial</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Videos (Coming Soon)</a></li>
+                    <li><a href="/calculators">Free Calculators</a></li>
+                    <li><a href="/calc-mortgage">Mortgage Comparison Tool</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                    <li><a href="/#checklist">Financial Success Checklist (PDF)</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:leigh@leighgrant.ca">leigh@leighgrant.ca</a></li>
+                    <li><a href="https://www.leighgrant.ca" target="_blank" rel="noopener">leighgrant.ca</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource provided by Leigh Grant Financial for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Content by Leigh Grant Financial</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/calc-common.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+let selectedTier = 'tier2';
+const charts = {};
+const BENCHMARKS = {
+    tier1: { housing: 0.40, food: 0.12, transport: 0.12, fun: 0.08, label: 'major city' },
+    tier2: { housing: 0.35, food: 0.12, transport: 0.12, fun: 0.08, label: 'mid-size city' },
+    tier3: { housing: 0.30, food: 0.12, transport: 0.14, fun: 0.08, label: 'smaller community' },
+};
+const INC = ['in-pay', 'in-partner', 'in-side', 'in-benefits', 'in-other'];
+const EXP = ['ex-housing', 'ex-utilities', 'ex-groceries', 'ex-dining', 'ex-transport', 'ex-comms', 'ex-insurance', 'ex-childcare', 'ex-subs', 'ex-debt', 'ex-care', 'ex-fun', 'ex-savings', 'ex-other'];
+const sum = (ids) => ids.reduce((a, id) => a + num(id), 0);
+
+function showStep(step) {
+    document.querySelectorAll('.step-container').forEach((s) => s.classList.remove('active'));
+    document.getElementById('step-' + step).classList.add('active');
+}
+
+function switchViz(viz) {
+    document.querySelectorAll('.viz-btn').forEach((b) => {
+        const active = b.dataset.viz === viz;
+        b.classList.toggle('active', active);
+        b.setAttribute('aria-selected', String(active));
+    });
+    ['donut', 'bench', 'flow'].forEach((v) => { document.getElementById('viz-' + v).hidden = v !== viz; });
+}
+
+function runCalc() {
+    const income = sum(INC);
+    const expenses = sum(EXP);
+    const diff = income - expenses;
+    const v = (id) => num(id);
+
+    document.getElementById('status-value').textContent = fmt(Math.abs(diff));
+    document.getElementById('status-label').textContent = diff >= 0 ? 'Monthly surplus' : 'Monthly shortfall';
+    const display = document.getElementById('status-display');
+    display.className = 'status-hero ' + (diff < -50 ? 'negative' : diff <= 100 ? 'warning' : 'positive');
+
+    document.getElementById('flow-in').textContent = fmt(income);
+    document.getElementById('flow-out').textContent = fmt(expenses);
+    document.getElementById('flow-rate').textContent = (income > 0 ? Math.round((diff / income) * 100) : 0) + '%';
+
+    const groups = {
+        Housing: v('ex-housing') + v('ex-utilities'),
+        Food: v('ex-groceries') + v('ex-dining'),
+        Transport: v('ex-transport'),
+        Bills: v('ex-comms') + v('ex-insurance') + v('ex-subs'),
+        Family: v('ex-childcare'),
+        Debt: v('ex-debt'),
+        Lifestyle: v('ex-care') + v('ex-fun'),
+        Savings: v('ex-savings'),
+        Other: v('ex-other'),
+    };
+
+    if (charts.donut) charts.donut.destroy();
+    charts.donut = new Chart(document.getElementById('donutChart'), {
+        type: 'doughnut',
+        data: { labels: Object.keys(groups), datasets: [{ data: Object.values(groups), backgroundColor: PALETTE.categorical, borderWidth: 2, borderColor: '#fff' }] },
+        options: { cutout: '62%', plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } }, tooltip: { callbacks: { label: (c) => ' ' + c.label + ': ' + fmt(c.parsed) } } } },
+    });
+
+    const b = BENCHMARKS[selectedTier];
+    const share = (x) => (income > 0 ? x / income : 0);
+    const actuals = [share(groups.Housing), share(groups.Food), share(groups.Transport), share(groups.Lifestyle)];
+    const targets = [b.housing, b.food, b.transport, b.fun];
+    if (charts.bench) charts.bench.destroy();
+    charts.bench = new Chart(document.getElementById('benchChart'), {
+        type: 'bar',
+        data: {
+            labels: ['Housing', 'Food', 'Transport', 'Lifestyle'],
+            datasets: [
+                { label: 'You', data: actuals.map((a) => a * 100), backgroundColor: actuals.map((a, i) => (a > targets[i] * 1.25 ? PALETTE.danger : a > targets[i] ? PALETTE.gold : PALETTE.charcoal)), borderRadius: 6 },
+                { label: 'Benchmark', data: targets.map((t) => t * 100), backgroundColor: 'rgba(47,47,48,0.12)', borderRadius: 6 },
+            ],
+        },
+        options: {
+            indexAxis: 'y',
+            plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + c.parsed.x.toFixed(0) + '%' } } },
+            scales: { x: { beginAtZero: true, suggestedMax: 50, ticks: { callback: (x) => x + '%' } } },
+        },
+    });
+
+    generateInsights(income, diff, groups, b);
+    updateWhatIf();
+}
+
+function generateInsights(income, diff, groups, b) {
+    const items = [];
+    if (income <= 0) {
+        items.push('Start by entering your monthly take-home income to see your results.');
+    } else {
+        const housingShare = groups.Housing / income;
+        if (housingShare > b.housing) {
+            items.push(`Housing (including utilities) takes ${Math.round(housingShare * 100)}% of your income, above the rough ${Math.round(b.housing * 100)}% benchmark for a ${b.label}. That's common in today's market, but it leaves less room elsewhere, so it's worth keeping other categories tight.`);
+        }
+        if (diff < 0) {
+            const biggest = Object.entries(groups).filter(([k]) => !['Housing', 'Savings'].includes(k)).sort((x, y) => y[1] - x[1])[0];
+            items.push(`You're spending ${fmt(Math.abs(diff))} more than you bring in each month. Your largest flexible category is ${biggest[0].toLowerCase()} at ${fmt(biggest[1])}, which may be the easiest place to adjust.`);
+        } else if (diff < 100) {
+            items.push('You\'re in the green, but it\'s tight. Even $50 a month set aside in an emergency fund can keep a surprise car repair or bill off your credit card.');
+        } else {
+            items.push(`You have a ${fmt(diff)} monthly surplus. Giving every dollar a job, like an emergency fund, extra debt payments, or TFSA or RRSP contributions, helps it build real progress instead of disappearing.`);
+        }
+        const savingsShare = groups.Savings / income;
+        if (savingsShare < 0.1 && diff >= 0) {
+            items.push(`You're saving about ${Math.round(savingsShare * 100)}% of your income. A common goal is 10% to 20% for savings and extra debt payments; even a small automatic transfer on payday is a great start.`);
+        }
+        if (groups.Debt / income > 0.15) {
+            items.push('Debt payments take more than 15% of your income. Compare payoff strategies with the <a href="/calc-debt-compare">avalanche vs. snowball calculator</a>.');
+        }
+    }
+    document.getElementById('insights-list').innerHTML = items.map((t) => `<div class="insight-item">${t}</div>`).join('');
+}
+
+function updateWhatIf() {
+    const cut = parseInt(document.getElementById('what-if-slider').value, 10);
+    document.getElementById('what-if-val').textContent = fmt(cut);
+    const actualCut = Math.min(cut, num('ex-dining'));
+    const newDiff = sum(INC) - (sum(EXP) - actualCut);
+    document.getElementById('what-if-result').textContent = (newDiff < 0 ? '-' : '') + fmt(Math.abs(newDiff));
+}
+
+function exportPDF() {
+    html2pdf().set({
+        margin: 10,
+        filename: 'Life-Ready-Monthly-Budget.pdf',
+        image: { type: 'jpeg', quality: 0.95 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    }).from(document.getElementById('budget-pdf-area')).save();
+}
+
+document.querySelectorAll('.quiz-opt').forEach((btn) => btn.addEventListener('click', () => {
+    selectedTier = btn.dataset.tier;
+    showStep('builder');
+    runCalc();
+}));
+document.getElementById('back-step').addEventListener('click', () => showStep('quiz'));
+document.querySelectorAll('.viz-btn').forEach((btn) => btn.addEventListener('click', () => switchViz(btn.dataset.viz)));
+document.querySelectorAll('.inc-input, .exp-input').forEach((el) => el.addEventListener('input', runCalc));
+document.getElementById('what-if-slider').addEventListener('input', updateWhatIf);
+document.getElementById('export-btn').addEventListener('click', exportPDF);
+</script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>

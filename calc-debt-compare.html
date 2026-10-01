@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO:START -->
+    <title>Debt Avalanche vs. Snowball Calculator | Life Ready</title>
+    <meta name="description" content="Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.">
+    <link rel="canonical" href="https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Leigh Grant Financial">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Debt Avalanche vs. Snowball Calculator | Life Ready">
+    <meta property="og:description" content="Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.">
+    <meta property="og:url" content="https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare">
+    <meta property="og:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Debt Avalanche vs. Snowball Calculator | Life Ready">
+    <meta name="twitter:description" content="Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/calculators.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://www.leighgrant.ca/#organization",
+      "name": "Leigh Grant Financial",
+      "url": "https://www.leighgrant.ca",
+      "email": "leigh@leighgrant.ca",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.lucas-gil.workers.dev/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare#webpage",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare",
+      "name": "Debt Avalanche vs. Snowball Calculator | Life Ready",
+      "description": "Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website"
+      },
+      "dateModified": "2026-10-01",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png"
+      },
+      "breadcrumb": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculators",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Avalanche vs. Snowball"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare#app",
+      "name": "Debt Avalanche vs. Snowball Calculator",
+      "description": "Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (runs in a web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      },
+      "inLanguage": "en-CA",
+      "author": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
+      }
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
+</head>
+<body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span>
+            <span class="utility-bar-full">Financial information at your fingertips: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
+
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">By Leigh Grant Financial</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home">Home</a>
+            <a href="/education" data-nav="articles">Articles</a>
+            <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
+            <a href="/calculators" data-nav="calculators" class="active" aria-current="page">Calculators</a>
+            <a href="/templates" data-nav="templates">Templates</a>
+        </div>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
+
+<main id="main">
+    <header class="page-header">
+        <div class="container">
+<!-- BREADCRUMB:START -->
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/calculators">Calculators</a></li><li aria-current="page">Avalanche vs. Snowball</li></ol></nav>
+<!-- BREADCRUMB:END -->
+            <span class="subheading">Free Calculator</span>
+            <h1>Debt Avalanche vs. Snowball Calculator</h1>
+            <p>Enter your debts, set an extra monthly payment, and see which repayment strategy saves you more, with a real month-by-month simulation.</p>
+<!-- CALCPILLS:START -->
+<div class="calc-hero-pills"><span class="calc-hero-pill">Real Simulation</span><span class="calc-hero-pill">Payoff Order</span><span class="calc-hero-pill">Up to 5 Debts</span></div>
+<!-- CALCPILLS:END -->
+        </div>
+    </header>
+
+    <section class="section-padding section-tight-top">
+        <div class="container">
+            <div class="calc-layout wide-left">
+                <div>
+                    <div class="calc-panel">
+                        <h2 class="calc-panel-title">Your debts</h2>
+                        <div id="debt-rows"></div>
+                        <button type="button" class="add-debt-btn" id="add-debt-btn">+ Add another debt</button>
+                    </div>
+                    <div class="calc-panel">
+                        <h2 class="calc-panel-title">Extra monthly payment</h2>
+                        <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 16px;">The amount you can put toward debt each month on top of your minimum payments. Even $50 makes a real difference.</p>
+                        <div class="field-group">
+                            <label for="extra-payment">Extra payment per month ($)</label>
+                            <input type="number" id="extra-payment" value="150" min="0" inputmode="decimal">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="calc-panel" aria-live="polite">
+                        <h2 class="calc-panel-title">Strategy comparison</h2>
+                        <div class="compare-grid">
+                            <div class="compare-card avalanche">
+                                <span class="compare-tag">Saves the most interest</span>
+                                <div class="compare-name">Debt Avalanche</div>
+                                <div class="compare-stat">Total interest <strong id="av-interest">$0</strong></div>
+                                <div class="compare-stat">Time to debt-free <strong id="av-months">0 mo</strong></div>
+                            </div>
+                            <div class="compare-card snowball">
+                                <span class="compare-tag">Quickest early wins</span>
+                                <div class="compare-name">Debt Snowball</div>
+                                <div class="compare-stat">Total interest <strong id="sb-interest">$0</strong></div>
+                                <div class="compare-stat">Time to debt-free <strong id="sb-months">0 mo</strong></div>
+                            </div>
+                        </div>
+                        <div id="winner-banner" class="success-banner" hidden></div>
+                        <div id="error-banner" class="warn-banner" hidden></div>
+                        <div class="field-row-2" style="margin-top: 18px;">
+                            <div>
+                                <div class="calc-subtitle">Avalanche order</div>
+                                <ul class="payoff-list" id="av-order"></ul>
+                            </div>
+                            <div>
+                                <div class="calc-subtitle" style="color: var(--secondary);">Snowball order</div>
+                                <ul class="payoff-list" id="sb-order"></ul>
+                            </div>
+                        </div>
+                        <div class="chart-wrap">
+                            <canvas id="compareChart" height="260" role="img" aria-label="Total debt over time under each strategy"></canvas>
+                            <div class="chart-legend">
+                                <div class="legend-item"><div class="legend-dot" style="background:#D49424"></div>Avalanche (total debt)</div>
+                                <div class="legend-item"><div class="legend-dot" style="background:#2F2F30"></div>Snowball (total debt)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-box">
+                <h2>Which strategy should you choose?</h2>
+                <p><strong>Debt avalanche:</strong> pay the debt with the highest interest rate first while making minimum payments on everything else. When it's cleared, roll its payment into the next-highest rate. This keeps total interest as low as possible.</p>
+                <p><strong>Debt snowball:</strong> pay the smallest balance first. You clear accounts sooner, and those early wins help many people stay motivated. The trade-off is usually paying a bit more interest.</p>
+                <p><strong>The best strategy is the one you'll stick with.</strong> Learn more in <a href="/article-debt-management">a practical plan for paying down debt</a>.</p>
+            </div>
+            <p class="calc-disclaimer">This simulation assumes minimum payments are made as entered, interest compounds monthly, and rates stay the same. It does not account for new borrowing, missed payments, or fees. Results are estimates for educational purposes only.</p>
+
+<!-- CALCRELATED:START -->
+<section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep learning</h2>
+    <div class="resource-grid">
+<a href="/article-debt-management" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>A Practical Plan for Paying Down Debt</h3>
+        <p>How to prioritize what you owe, compare the avalanche and snowball methods, and avoid common traps.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/calc-mortgage" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Home Buying</span>
+        <h3>Mortgage Repayment Calculator &amp; Comparison Tool</h3>
+        <p>Compare two mortgages side by side: rate, amortization, payment frequency, and prepayments, with Canadian semi-annual compounding.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+<a href="/calc-cc-danger" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Credit</span>
+        <h3>Credit Card Minimum Payment Calculator</h3>
+        <p>See exactly how long it takes, and how much you really pay, when you only make the minimum payment on a credit card.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+    </div>
+</section>
+<!-- CALCRELATED:END -->
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">By Leigh Grant Financial</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Leigh Grant Financial</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Videos (Coming Soon)</a></li>
+                    <li><a href="/calculators">Free Calculators</a></li>
+                    <li><a href="/calc-mortgage">Mortgage Comparison Tool</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                    <li><a href="/#checklist">Financial Success Checklist (PDF)</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:leigh@leighgrant.ca">leigh@leighgrant.ca</a></li>
+                    <li><a href="https://www.leighgrant.ca" target="_blank" rel="noopener">leighgrant.ca</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource provided by Leigh Grant Financial for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Content by Leigh Grant Financial</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/calc-common.js"></script>
+<script>
+let debtCount = 0;
+let nextDebtId = 0;
+let compareChart;
+const defaultDebts = [
+    { name: 'Credit Card', balance: 6500, rate: 20.99, minPay: 195 },
+    { name: 'Line of Credit', balance: 2500, rate: 10.5, minPay: 75 },
+    { name: 'Car Loan', balance: 14000, rate: 7.5, minPay: 330 },
+];
+
+const escapeAttr = (v) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+
+function addDebtRow(d) {
+    if (debtCount >= 5) return;
+    debtCount++;
+    const id = ++nextDebtId;
+    const debt = d || { name: '', balance: '', rate: '', minPay: '' };
+    const row = document.createElement('div');
+    row.className = 'debt-row';
+    row.id = 'debt-row-' + id;
+    row.innerHTML = `
+        <div class="debt-row-grid">
+            <div><label class="debt-row-label" for="dn-${id}">Debt name</label><input class="debt-row-input" id="dn-${id}" type="text" data-field="name" value="${escapeAttr(debt.name)}" placeholder="e.g. Credit card"></div>
+            <div><label class="debt-row-label" for="db-${id}">Balance ($)</label><input class="debt-row-input" id="db-${id}" type="number" data-field="balance" value="${debt.balance}" min="0" inputmode="decimal"></div>
+            <div><label class="debt-row-label" for="dr-${id}">Rate (%)</label><input class="debt-row-input" id="dr-${id}" type="number" data-field="rate" value="${debt.rate}" min="0" step="0.01" inputmode="decimal"></div>
+            <div><label class="debt-row-label" for="dm-${id}">Min pay ($)</label><input class="debt-row-input" id="dm-${id}" type="number" data-field="minpay" value="${debt.minPay}" min="0" inputmode="decimal"></div>
+            <button type="button" class="debt-remove-btn" aria-label="Remove this debt">&times;</button>
+        </div>`;
+    row.querySelectorAll('input').forEach((el) => el.addEventListener('input', runComparison));
+    row.querySelector('.debt-remove-btn').addEventListener('click', () => removeDebtRow(id));
+    document.getElementById('debt-rows').appendChild(row);
+    document.getElementById('add-debt-btn').hidden = debtCount >= 5;
+    runComparison();
+}
+
+function removeDebtRow(id) {
+    const row = document.getElementById('debt-row-' + id);
+    if (row) row.remove();
+    debtCount = document.querySelectorAll('.debt-row').length;
+    document.getElementById('add-debt-btn').hidden = debtCount >= 5;
+    runComparison();
+}
+
+function getDebts() {
+    const debts = [];
+    document.querySelectorAll('.debt-row').forEach((row, i) => {
+        const name = row.querySelector('[data-field="name"]').value.trim() || 'Debt ' + (i + 1);
+        const balance = parseFloat(row.querySelector('[data-field="balance"]').value) || 0;
+        const rate = parseFloat(row.querySelector('[data-field="rate"]').value) || 0;
+        const minPay = parseFloat(row.querySelector('[data-field="minpay"]').value) || 0;
+        if (balance > 0) debts.push({ key: i, name, balance, rate, minPay });
+    });
+    return debts;
+}
+
+function simulate(input, extraPayment, strategy) {
+    const debts = input.map((d) => ({ ...d }));
+    debts.sort(strategy === 'avalanche' ? (a, b) => b.rate - a.rate : (a, b) => a.balance - b.balance);
+    let totalInterest = 0;
+    let months = 0;
+    let freedPayment = 0;
+    const payoffOrder = [];
+    const balanceHistory = [debts.reduce((s, d) => s + d.balance, 0)];
+    const paidOff = new Set();
+
+    while (debts.some((d) => !paidOff.has(d.key)) && months < 600) {
+        months++;
+        for (const d of debts) {
+            if (paidOff.has(d.key)) continue;
+            const interest = d.balance * (d.rate / 100 / 12);
+            totalInterest += interest;
+            d.balance += interest;
+        }
+        for (const d of debts) {
+            if (paidOff.has(d.key)) continue;
+            d.balance = Math.max(0, d.balance - Math.min(d.minPay, d.balance));
+        }
+        let pool = extraPayment + freedPayment;
+        for (const d of debts) {
+            if (paidOff.has(d.key) || d.balance <= 0.01 || pool <= 0) continue;
+            const applied = Math.min(pool, d.balance);
+            d.balance -= applied;
+            pool -= applied;
+        }
+        for (const d of debts) {
+            if (!paidOff.has(d.key) && d.balance <= 0.01) {
+                d.balance = 0;
+                paidOff.add(d.key);
+                payoffOrder.push({ name: d.name, month: months });
+                freedPayment += d.minPay;
+            }
+        }
+        balanceHistory.push(debts.reduce((s, d) => s + Math.max(0, d.balance), 0));
+    }
+    return { totalInterest, months, payoffOrder, balanceHistory, timedOut: months >= 600 };
+}
+
+const duration = (m) => m + ' mo (' + (m / 12).toFixed(1) + ' yrs)';
+const orderHtml = (order, cls) => order.map((p, i) => `<li><span class="payoff-num ${cls}">${i + 1}</span>${escapeAttr(p.name)}<span style="color:var(--muted); margin-left:auto;">mo ${p.month}</span></li>`).join('');
+
+function runComparison() {
+    const debts = getDebts();
+    const extra = num('extra-payment');
+    const errorBanner = document.getElementById('error-banner');
+    const winnerBanner = document.getElementById('winner-banner');
+
+    if (debts.length === 0) {
+        errorBanner.hidden = false;
+        errorBanner.textContent = 'Enter at least one debt with a balance greater than $0.';
+        winnerBanner.hidden = true;
+        return;
+    }
+    const problem = debts.find((d) => d.minPay <= d.balance * (d.rate / 100 / 12));
+    if (problem && extra === 0) {
+        errorBanner.hidden = false;
+        errorBanner.innerHTML = `<strong>Heads up:</strong> the minimum payment on "${escapeAttr(problem.name)}" doesn't cover its monthly interest, so it would never be paid off. Raise the minimum payment or add an extra monthly payment.`;
+        winnerBanner.hidden = true;
+        return;
+    }
+    errorBanner.hidden = true;
+
+    const av = simulate(debts, extra, 'avalanche');
+    const sb = simulate(debts, extra, 'snowball');
+    document.getElementById('av-interest').textContent = av.timedOut ? 'Not paid off' : fmt(av.totalInterest);
+    document.getElementById('av-months').textContent = av.timedOut ? '50+ years' : duration(av.months);
+    document.getElementById('sb-interest').textContent = sb.timedOut ? 'Not paid off' : fmt(sb.totalInterest);
+    document.getElementById('sb-months').textContent = sb.timedOut ? '50+ years' : duration(sb.months);
+
+    winnerBanner.hidden = av.timedOut || sb.timedOut;
+    if (!winnerBanner.hidden) {
+        const saved = sb.totalInterest - av.totalInterest;
+        const faster = sb.months - av.months;
+        winnerBanner.innerHTML = saved > 0.5
+            ? `The avalanche saves you <strong>${fmt(saved)}</strong> in interest${faster > 0 ? ` and finishes <strong>${faster} month${faster !== 1 ? 's' : ''} sooner</strong>` : ''}.`
+            : 'Both strategies cost about the same with these debts, so the snowball gives you quicker wins at little extra cost.';
+    }
+
+    document.getElementById('av-order').innerHTML = orderHtml(av.payoffOrder, 'avalanche');
+    document.getElementById('sb-order').innerHTML = orderHtml(sb.payoffOrder, 'snowball');
+
+    const maxLen = Math.max(av.balanceHistory.length, sb.balanceHistory.length);
+    const step = Math.max(1, Math.floor(maxLen / 60));
+    const labels = [], avData = [], sbData = [];
+    for (let i = 0; i < maxLen; i += step) {
+        labels.push('Mo ' + i);
+        avData.push(av.balanceHistory[Math.min(i, av.balanceHistory.length - 1)]);
+        sbData.push(sb.balanceHistory[Math.min(i, sb.balanceHistory.length - 1)]);
+    }
+
+    if (compareChart) compareChart.destroy();
+    compareChart = new Chart(document.getElementById('compareChart'), {
+        type: 'line',
+        data: {
+            labels,
+            datasets: [
+                { label: 'Avalanche', data: avData, borderColor: PALETTE.gold, backgroundColor: PALETTE.goldFill, fill: true, tension: 0.3, pointRadius: 0, borderWidth: 2 },
+                { label: 'Snowball', data: sbData, borderColor: PALETTE.charcoal, backgroundColor: 'transparent', fill: false, tension: 0.3, pointRadius: 0, borderWidth: 2, borderDash: [5, 4] },
+            ],
+        },
+        options: {
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + fmtD(c.parsed.y) } } },
+            scales: { y: { beginAtZero: true, ticks: { callback: fmtK } }, x: { ticks: { maxTicksLimit: 8 } } },
+        },
+    });
+}
+
+document.getElementById('add-debt-btn').addEventListener('click', () => addDebtRow());
+document.getElementById('extra-payment').addEventListener('input', runComparison);
+defaultDebts.forEach((d) => addDebtRow(d));
+</script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>

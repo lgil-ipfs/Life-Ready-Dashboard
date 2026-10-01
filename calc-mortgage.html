@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO:START -->
+    <title>Mortgage Calculator &amp; Comparison Tool (Canada) | Life Ready</title>
+    <meta name="description" content="Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.">
+    <link rel="canonical" href="https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Leigh Grant Financial">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mortgage Calculator &amp; Comparison Tool (Canada) | Life Ready">
+    <meta property="og:description" content="Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.">
+    <meta property="og:url" content="https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage">
+    <meta property="og:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mortgage Calculator &amp; Comparison Tool (Canada) | Life Ready">
+    <meta name="twitter:description" content="Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/calculators.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://www.leighgrant.ca/#organization",
+      "name": "Leigh Grant Financial",
+      "url": "https://www.leighgrant.ca",
+      "email": "leigh@leighgrant.ca",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.lucas-gil.workers.dev/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage#webpage",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage",
+      "name": "Mortgage Calculator & Comparison Tool (Canada) | Life Ready",
+      "description": "Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website"
+      },
+      "dateModified": "2026-10-01",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png"
+      },
+      "breadcrumb": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculators",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Mortgage Calculator"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage#app",
+      "name": "Mortgage Repayment Calculator & Comparison Tool",
+      "description": "Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (runs in a web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      },
+      "inLanguage": "en-CA",
+      "author": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is mortgage interest calculated in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under the Interest Act, fixed-rate mortgages in Canada are compounded semi-annually, not in advance. That makes the effective rate slightly lower than the same rate compounded monthly. Many variable-rate mortgages compound monthly, so check your mortgage documents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does an accelerated bi-weekly payment really save money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. An accelerated bi-weekly payment is half of your monthly payment made every two weeks, which adds up to one extra monthly payment each year. On a typical 25-year mortgage, that can shorten the amortization by roughly three years and save thousands of dollars in interest."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between amortization and term?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The amortization is the total time it would take to pay off the mortgage, often 25 or 30 years. The term is the length of your current contract and interest rate, often 5 years. When the term ends, you renew with the remaining balance at a new rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is CMHC mortgage insurance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mortgage default insurance is required when your down payment is less than 20%. The premium is 4.00% of the loan with 5% to 9.99% down, 3.10% with 10% to 14.99% down, and 2.80% with 15% to 19.99% down. It is usually added to your mortgage balance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum down payment in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The minimum down payment is 5% of the first $500,000 of the purchase price and 10% of the portion between $500,000 and $1.5 million. Homes priced at $1.5 million or more require at least 20% down and cannot be insured."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
+</head>
+<body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span>
+            <span class="utility-bar-full">Financial information at your fingertips: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
+
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">By Leigh Grant Financial</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home">Home</a>
+            <a href="/education" data-nav="articles">Articles</a>
+            <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
+            <a href="/calculators" data-nav="calculators" class="active" aria-current="page">Calculators</a>
+            <a href="/templates" data-nav="templates">Templates</a>
+        </div>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
+
+<main id="main">
+    <header class="page-header">
+        <div class="container">
+<!-- BREADCRUMB:START -->
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/calculators">Calculators</a></li><li aria-current="page">Mortgage Calculator</li></ol></nav>
+<!-- BREADCRUMB:END -->
+            <span class="subheading">Free Calculator</span>
+            <h1>Mortgage Repayment Calculator &amp; Comparison Tool</h1>
+            <p>Compare two mortgage scenarios side by side. See how your rate, amortization, payment frequency, and prepayments change your payment, total interest, and payoff date, using Canadian compounding rules.</p>
+<!-- CALCPILLS:START -->
+<div class="calc-hero-pills"><span class="calc-hero-pill">Canadian Semi-Annual Compounding</span><span class="calc-hero-pill">Side-by-Side Comparison</span><span class="calc-hero-pill">Prepayments</span><span class="calc-hero-pill">CMHC Insurance</span></div>
+<!-- CALCPILLS:END -->
+        </div>
+    </header>
+
+    <section class="section-padding section-tight-top">
+        <div class="container">
+            <div class="calc-layout">
+                <div>
+                    <div class="calc-panel">
+                        <h2 class="calc-panel-title">Home and down payment</h2>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="m-price">Home price ($)</label>
+                                <input type="number" id="m-price" value="650000" min="0" step="1000" inputmode="decimal">
+                            </div>
+                            <div class="field-group">
+                                <label for="m-down">Down payment ($)</label>
+                                <input type="number" id="m-down" value="130000" min="0" step="1000" inputmode="decimal">
+                            </div>
+                        </div>
+                        <div class="field-group">
+                            <label for="m-term">Mortgage term (years) <span class="hint">used for the end-of-term balance</span></label>
+                            <select id="m-term"><option value="1">1 year</option><option value="2">2 years</option><option value="3">3 years</option><option value="4">4 years</option><option value="5" selected>5 years</option><option value="7">7 years</option><option value="10">10 years</option></select>
+                        </div>
+                        <div class="stat-grid" style="margin-bottom: 0;">
+                            <div class="stat-block accent"><div class="stat-label">Down payment</div><div class="stat-value accent" id="m-down-pct">20.0%</div></div>
+                            <div class="stat-block accent"><div class="stat-label">Mortgage amount</div><div class="stat-value accent" id="m-principal">$0</div></div>
+                        </div>
+                        <div id="m-cmhc" class="warn-banner" hidden></div>
+                        <div id="m-down-warn" class="warn-banner" hidden></div>
+                    </div>
+                    <div class="calc-panel scenario-panel a">
+                        <h2 class="calc-panel-title"><span><span class="scenario-chip">Scenario A</span> Your mortgage</span></h2>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="a-rate">Interest rate (%)</label>
+                                <input type="number" id="a-rate" value="4.50" min="0" max="25" step="0.01" inputmode="decimal">
+                            </div>
+                            <div class="field-group">
+                                <label for="a-type">Rate type</label>
+                                <select id="a-type"><option value="fixed">Fixed</option><option value="variable">Variable</option></select>
+                            </div>
+                        </div>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="a-amort">Amortization</label>
+                                <select id="a-amort"><option value="10">10 years</option><option value="15">15 years</option><option value="20">20 years</option><option value="25" selected>25 years</option><option value="30">30 years</option></select>
+                            </div>
+                            <div class="field-group">
+                                <label for="a-freq">Payment frequency</label>
+                                <select id="a-freq"><option value="monthly" selected>Monthly</option><option value="semi-monthly">Semi-monthly (24/yr)</option><option value="biweekly">Bi-weekly (26/yr)</option><option value="accel-biweekly">Accelerated bi-weekly</option><option value="weekly">Weekly (52/yr)</option><option value="accel-weekly">Accelerated weekly</option></select>
+                            </div>
+                        </div>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="a-extra">Extra per payment ($)</label>
+                                <input type="number" id="a-extra" value="0" min="0" inputmode="decimal">
+                            </div>
+                            <div class="field-group">
+                                <label for="a-lump">Yearly lump sum ($)</label>
+                                <input type="number" id="a-lump" value="0" min="0" inputmode="decimal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calc-panel scenario-panel b">
+                        <h2 class="calc-panel-title"><span><span class="scenario-chip">Scenario B</span> Compare with</span><button type="button" class="copy-btn-sm" id="copy-a-to-b">Copy from A</button></h2>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="b-rate">Interest rate (%)</label>
+                                <input type="number" id="b-rate" value="4.50" min="0" max="25" step="0.01" inputmode="decimal">
+                            </div>
+                            <div class="field-group">
+                                <label for="b-type">Rate type</label>
+                                <select id="b-type"><option value="fixed">Fixed</option><option value="variable">Variable</option></select>
+                            </div>
+                        </div>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="b-amort">Amortization</label>
+                                <select id="b-amort"><option value="10">10 years</option><option value="15">15 years</option><option value="20">20 years</option><option value="25" selected>25 years</option><option value="30">30 years</option></select>
+                            </div>
+                            <div class="field-group">
+                                <label for="b-freq">Payment frequency</label>
+                                <select id="b-freq"><option value="monthly">Monthly</option><option value="semi-monthly">Semi-monthly (24/yr)</option><option value="biweekly">Bi-weekly (26/yr)</option><option value="accel-biweekly" selected>Accelerated bi-weekly</option><option value="weekly">Weekly (52/yr)</option><option value="accel-weekly">Accelerated weekly</option></select>
+                            </div>
+                        </div>
+                        <div class="field-row-2">
+                            <div class="field-group">
+                                <label for="b-extra">Extra per payment ($)</label>
+                                <input type="number" id="b-extra" value="0" min="0" inputmode="decimal">
+                            </div>
+                            <div class="field-group">
+                                <label for="b-lump">Yearly lump sum ($)</label>
+                                <input type="number" id="b-lump" value="0" min="0" inputmode="decimal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="calc-panel" aria-live="polite">
+                        <h2 class="calc-panel-title">Side-by-side comparison</h2>
+                        <div class="compare-grid">
+                            <div class="compare-card scenario-a">
+                                <span class="compare-tag">Scenario A</span>
+                                <div class="compare-name" id="a-pmt">$0</div>
+                                <div class="compare-stat">Total interest <strong id="a-interest">$0</strong></div>
+                                <div class="compare-stat">Paid off in <strong id="a-time">0 yrs</strong></div>
+                                <div class="compare-stat">Balance at end of term <strong id="a-term-bal">$0</strong></div>
+                                <div class="compare-stat">Interest paid during term <strong id="a-term-int">$0</strong></div>
+                            </div>
+                            <div class="compare-card scenario-b">
+                                <span class="compare-tag">Scenario B</span>
+                                <div class="compare-name" id="b-pmt">$0</div>
+                                <div class="compare-stat">Total interest <strong id="b-interest">$0</strong></div>
+                                <div class="compare-stat">Paid off in <strong id="b-time">0 yrs</strong></div>
+                                <div class="compare-stat">Balance at end of term <strong id="b-term-bal">$0</strong></div>
+                                <div class="compare-stat">Interest paid during term <strong id="b-term-int">$0</strong></div>
+                            </div>
+                        </div>
+                        <div id="m-verdict" class="success-banner"></div>
+                        <div class="chart-wrap">
+                            <canvas id="mortgageChart" height="270" role="img" aria-label="Remaining mortgage balance over time for each scenario"></canvas>
+                            <div class="chart-legend">
+                                <div class="legend-item"><div class="legend-dot" style="background:#D49424"></div>Scenario A balance</div>
+                                <div class="legend-item"><div class="legend-dot" style="background:#2F2F30"></div>Scenario B balance</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calc-panel" style="padding: 0; overflow: hidden;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 20px; border-bottom: 1px solid var(--border); flex-wrap: wrap;">
+                            <div class="calc-subtitle" style="margin: 0; color: var(--muted);">Yearly amortization schedule</div>
+                            <div class="viz-toggle" style="margin: 0; min-width: 180px;" role="tablist" aria-label="Choose a scenario">
+                                <button type="button" class="viz-btn active" data-sched="a" role="tab" aria-selected="true">Scenario A</button>
+                                <button type="button" class="viz-btn" data-sched="b" role="tab" aria-selected="false">Scenario B</button>
+                            </div>
+                        </div>
+                        <div class="calc-table-wrap">
+                            <table class="calc-table mortgage-table">
+                                <thead><tr><th scope="col">Year</th><th scope="col">Interest</th><th scope="col">Principal</th><th scope="col">Prepaid</th><th scope="col">End balance</th></tr></thead>
+                                <tbody id="m-table"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>How this mortgage calculator works</h2>
+                <ul>
+                    <li><strong>Canadian compounding:</strong> by law, fixed-rate mortgages in Canada compound interest semi-annually, not monthly. Many variable-rate mortgages compound monthly. Choose the rate type for each scenario to match.</li>
+                    <li><strong>Accelerated payments:</strong> accelerated bi-weekly payments are half your monthly payment, made every two weeks. That works out to 26 half-payments, or one extra monthly payment a year, which goes straight to principal.</li>
+                    <li><strong>Mortgage default insurance (CMHC):</strong> with less than 20% down, the premium (2.80% to 4.00% of the loan) is added to your mortgage. Insured mortgages over 25 years add 0.20% and are generally limited to first-time buyers and new builds. Some provinces charge sales tax on the premium, paid at closing.</li>
+                    <li><strong>Prepayments:</strong> most lenders let you prepay 10% to 20% of the original balance each year without penalty. Check your mortgage's prepayment privileges.</li>
+                </ul>
+            </div>
+
+            <section class="faq" aria-labelledby="faq-heading" style="margin-top: 44px;">
+                <div class="section-heading" style="margin-bottom: 28px;">
+                    <span class="subheading">FAQ</span>
+                    <h2 id="faq-heading">Mortgage questions</h2>
+                </div>
+                <details class="faq-item">
+                    <summary>How is mortgage interest calculated in Canada?</summary>
+                    <div class="faq-answer"><p>Under the Interest Act, fixed-rate mortgages in Canada are compounded semi-annually, not in advance. That makes the effective rate slightly lower than the same rate compounded monthly. Many variable-rate mortgages compound monthly, so check your mortgage documents.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>Does an accelerated bi-weekly payment really save money?</summary>
+                    <div class="faq-answer"><p>Yes. An accelerated bi-weekly payment is half of your monthly payment made every two weeks, which adds up to one extra monthly payment each year. On a typical 25-year mortgage, that can shorten the amortization by roughly three years and save thousands of dollars in interest.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is the difference between amortization and term?</summary>
+                    <div class="faq-answer"><p>The amortization is the total time it would take to pay off the mortgage, often 25 or 30 years. The term is the length of your current contract and interest rate, often 5 years. When the term ends, you renew with the remaining balance at a new rate.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>How much is CMHC mortgage insurance?</summary>
+                    <div class="faq-answer"><p>Mortgage default insurance is required when your down payment is less than 20%. The premium is 4.00% of the loan with 5% to 9.99% down, 3.10% with 10% to 14.99% down, and 2.80% with 15% to 19.99% down. It is usually added to your mortgage balance.</p></div>
+                </details>
+                <details class="faq-item">
+                    <summary>What is the minimum down payment in Canada?</summary>
+                    <div class="faq-answer"><p>The minimum down payment is 5% of the first $500,000 of the purchase price and 10% of the portion between $500,000 and $1.5 million. Homes priced at $1.5 million or more require at least 20% down and cannot be insured.</p></div>
+                </details>
+            </section>
+
+            <p class="calc-disclaimer">This calculator is an estimate for educational purposes only. It assumes the interest rate stays the same for the full amortization, payments are made on time, and prepayments are applied once a year. Actual payments, insurance premiums, and prepayment rules vary by lender and province. It is not a mortgage offer or financial advice.</p>
+
+<!-- CALCRELATED:START -->
+<section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep learning</h2>
+    <div class="resource-grid">
+<a href="/article-budgeting-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>How to Build a Budget That Actually Works</h3>
+        <p>A simple framework for putting every paycheque to work, including the 50/30/20 rule and how to automate savings.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/calc-budget" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Budgeting</span>
+        <h3>Monthly Budget Builder</h3>
+        <p>Enter your income and expenses to see your monthly surplus or shortfall, compare against benchmarks, and get smart insights.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+<a href="/calc-cc-danger" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Credit</span>
+        <h3>Credit Card Minimum Payment Calculator</h3>
+        <p>See exactly how long it takes, and how much you really pay, when you only make the minimum payment on a credit card.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+    </div>
+</section>
+<!-- CALCRELATED:END -->
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">By Leigh Grant Financial</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Leigh Grant Financial</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Videos (Coming Soon)</a></li>
+                    <li><a href="/calculators">Free Calculators</a></li>
+                    <li><a href="/calc-mortgage">Mortgage Comparison Tool</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                    <li><a href="/#checklist">Financial Success Checklist (PDF)</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:leigh@leighgrant.ca">leigh@leighgrant.ca</a></li>
+                    <li><a href="https://www.leighgrant.ca" target="_blank" rel="noopener">leighgrant.ca</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource provided by Leigh Grant Financial for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Content by Leigh Grant Financial</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/calc-common.js"></script>
+<script>
+let mortgageChart;
+let lastResults = {};
+let schedView = 'a';
+
+const FREQ = {
+    'monthly': { n: 12, label: 'per month' },
+    'semi-monthly': { n: 24, label: 'twice a month' },
+    'biweekly': { n: 26, label: 'every two weeks' },
+    'accel-biweekly': { n: 26, label: 'every two weeks', accel: 2 },
+    'weekly': { n: 52, label: 'per week' },
+    'accel-weekly': { n: 52, label: 'per week', accel: 4 },
+};
+
+function minDownPayment(price) {
+    if (price <= 500000) return price * 0.05;
+    if (price < 1500000) return 25000 + (price - 500000) * 0.10;
+    return price * 0.20;
+}
+
+function cmhcRate(downPct) {
+    if (downPct >= 0.20) return 0;
+    if (downPct >= 0.15) return 0.028;
+    if (downPct >= 0.10) return 0.031;
+    return 0.04;
+}
+
+function periodicRate(annualPct, type, n) {
+    const r = annualPct / 100;
+    return type === 'fixed' ? Math.pow(1 + r / 2, 2 / n) - 1 : Math.pow(1 + r / 12, 12 / n) - 1;
+}
+
+function standardPayment(principal, i, periods) {
+    if (i === 0) return principal / periods;
+    return (principal * i) / (1 - Math.pow(1 + i, -periods));
+}
+
+function readScenario(key) {
+    return {
+        rate: num(key + '-rate'),
+        type: document.getElementById(key + '-type').value,
+        amort: parseInt(document.getElementById(key + '-amort').value, 10),
+        freq: document.getElementById(key + '-freq').value,
+        extra: num(key + '-extra'),
+        lump: num(key + '-lump'),
+    };
+}
+
+function runScenario(s, base, insured, termYears) {
+    const f = FREQ[s.freq];
+    const premiumRate = insured ? base.cmhcRate + (s.amort > 25 ? 0.002 : 0) : 0;
+    const principal = base.loan * (1 + premiumRate);
+    const i = periodicRate(s.rate, s.type, f.n);
+    const regular = f.accel
+        ? standardPayment(principal, periodicRate(s.rate, s.type, 12), s.amort * 12) / f.accel
+        : standardPayment(principal, i, s.amort * f.n);
+    const payment = regular + s.extra;
+
+    let bal = principal;
+    let period = 0;
+    let totalInterest = 0;
+    let termBal = null;
+    let termInt = 0;
+    const years = [];
+    let yr = { interest: 0, principal: 0, prepaid: 0 };
+    const balances = [principal];
+
+    while (bal > 0.005 && period < f.n * 60) {
+        period++;
+        const interest = bal * i;
+        let pay = Math.min(payment, bal + interest);
+        bal = bal + interest - pay;
+        totalInterest += interest;
+        yr.interest += interest;
+        yr.principal += pay - interest;
+        if (period % f.n === 0) {
+            const lump = Math.min(s.lump, Math.max(0, bal));
+            bal -= lump;
+            yr.prepaid += lump;
+        }
+        if (period <= termYears * f.n) termInt += interest;
+        if (period === termYears * f.n) termBal = Math.max(0, bal);
+        if (period % f.n === 0 || bal <= 0.005) {
+            years.push({ ...yr, end: Math.max(0, bal) });
+            balances.push(Math.max(0, bal));
+            yr = { interest: 0, principal: 0, prepaid: 0 };
+        }
+    }
+
+    return {
+        principal, premium: principal - base.loan, payment, label: f.label, periods: period,
+        months: Math.ceil((period * 12) / f.n), totalInterest, termBal: termBal === null ? 0 : termBal, termInt,
+        years, balances, neverPaid: payment <= principal * i,
+    };
+}
+
+const ym = (months) => {
+    const y = Math.floor(months / 12), m = months % 12;
+    return y + ' yrs' + (m ? ' ' + m + ' mos' : '');
+};
+
+function renderTable() {
+    const r = lastResults[schedView];
+    if (!r) return;
+    document.getElementById('m-table').innerHTML = r.years.map((y, idx) => `
+        <tr><td>Year ${idx + 1}</td><td>${fmt(y.interest)}</td><td>${fmt(y.principal)}</td><td>${fmt(y.prepaid)}</td><td><strong>${fmt(y.end)}</strong></td></tr>`).join('');
+}
+
+function calcMortgage() {
+    const price = num('m-price');
+    const down = Math.min(num('m-down'), price);
+    const termYears = parseInt(document.getElementById('m-term').value, 10);
+    const downPct = price > 0 ? down / price : 0;
+    const loan = Math.max(0, price - down);
+    const insurable = price < 1500000 && downPct < 0.20;
+    const base = { loan, cmhcRate: cmhcRate(downPct) };
+
+    document.getElementById('m-down-pct').textContent = (downPct * 100).toFixed(1) + '%';
+
+    const minDown = minDownPayment(price);
+    const downWarn = document.getElementById('m-down-warn');
+    downWarn.hidden = down >= minDown - 0.5 || price === 0;
+    if (!downWarn.hidden) downWarn.innerHTML = `<strong>Below the minimum down payment.</strong> For a ${fmt(price)} home, the minimum is about ${fmt(minDown)}. Results are shown for illustration only.`;
+
+    const sA = readScenario('a');
+    const sB = readScenario('b');
+    const a = runScenario(sA, base, insurable, termYears);
+    const b = runScenario(sB, base, insurable, termYears);
+    lastResults = { a, b };
+
+    document.getElementById('m-principal').textContent = fmt(a.principal);
+    const cmhc = document.getElementById('m-cmhc');
+    cmhc.hidden = !insurable || loan === 0;
+    if (!cmhc.hidden) {
+        cmhc.innerHTML = `<strong>Mortgage default insurance applies.</strong> With ${(downPct * 100).toFixed(1)}% down, a premium of about ${fmt(a.premium)} is added to the mortgage${sA.amort !== sB.amort && (sA.amort > 25 || sB.amort > 25) ? ' (it is higher for the scenario amortized over 25 years)' : ''}.${(sA.amort > 25 || sB.amort > 25) ? ' Insured mortgages over 25 years are generally only available to first-time buyers and buyers of new builds.' : ''}`;
+    }
+
+    for (const [key, r] of [['a', a], ['b', b]]) {
+        document.getElementById(key + '-pmt').innerHTML = fmtD(r.payment) + ' <span style="font-size:0.8rem; font-family:\'DM Sans\',sans-serif; font-weight:600; color:var(--muted);">' + r.label + '</span>';
+        document.getElementById(key + '-interest').textContent = fmt(r.totalInterest);
+        document.getElementById(key + '-time').textContent = r.neverPaid ? 'Never' : ym(r.months);
+        document.getElementById(key + '-term-bal').textContent = fmt(r.termBal);
+        document.getElementById(key + '-term-int').textContent = fmt(r.termInt);
+    }
+
+    const verdict = document.getElementById('m-verdict');
+    const saved = a.totalInterest - b.totalInterest;
+    const monthsDiff = a.months - b.months;
+    if (Math.abs(saved) < 1) {
+        verdict.textContent = 'Both scenarios cost the same in interest. Change the rate, amortization, frequency, or prepayments to compare.';
+    } else {
+        const winner = saved > 0 ? 'B' : 'A';
+        const timeTxt = monthsDiff !== 0 ? ` and is paid off <strong>${ym(Math.abs(monthsDiff))} ${Math.sign(monthsDiff) === Math.sign(saved) ? 'sooner' : 'later'}</strong>` : '';
+        verdict.innerHTML = `Scenario ${winner} saves <strong>${fmt(Math.abs(saved))}</strong> in interest${timeTxt}.`;
+    }
+
+    const len = Math.max(a.balances.length, b.balances.length);
+    const pad = (arr) => [...arr, ...Array(len - arr.length).fill(0)];
+    if (mortgageChart) mortgageChart.destroy();
+    mortgageChart = new Chart(document.getElementById('mortgageChart'), {
+        type: 'line',
+        data: {
+            labels: Array.from({ length: len }, (_, k) => (k === 0 ? 'Start' : 'Yr ' + k)),
+            datasets: [
+                { label: 'Scenario A', data: pad(a.balances), borderColor: PALETTE.gold, backgroundColor: PALETTE.goldFill, fill: true, tension: 0.25, pointRadius: 0, borderWidth: 2 },
+                { label: 'Scenario B', data: pad(b.balances), borderColor: PALETTE.charcoal, fill: false, tension: 0.25, pointRadius: 0, borderWidth: 2, borderDash: [6, 4] },
+            ],
+        },
+        options: {
+            interaction: { mode: 'index', intersect: false },
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + fmt(c.parsed.y) } } },
+            scales: { y: { beginAtZero: true, ticks: { callback: fmtK } }, x: { ticks: { maxTicksLimit: 11 } } },
+        },
+    });
+
+    renderTable();
+}
+
+document.querySelectorAll('.calc-layout input, .calc-layout select').forEach((el) => el.addEventListener('input', calcMortgage));
+document.getElementById('copy-a-to-b').addEventListener('click', () => {
+    ['rate', 'type', 'amort', 'freq', 'extra', 'lump'].forEach((f) => { document.getElementById('b-' + f).value = document.getElementById('a-' + f).value; });
+    calcMortgage();
+});
+document.querySelectorAll('[data-sched]').forEach((btn) => btn.addEventListener('click', () => {
+    schedView = btn.dataset.sched;
+    document.querySelectorAll('[data-sched]').forEach((x) => {
+        x.classList.toggle('active', x === btn);
+        x.setAttribute('aria-selected', String(x === btn));
+    });
+    renderTable();
+}));
+calcMortgage();
+</script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>

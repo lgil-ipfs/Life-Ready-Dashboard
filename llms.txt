@@ -1,6 +1,6 @@
 # Life Ready Learning Hub
 
-> Free, plain-English financial education for Canadians, published by Leigh Grant Financial (https://www.leighgrant.ca) for the Life Ready Facilitated Care community and the public. The site offers articles, a free Financial Success Checklist (PDF), a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.
+> Free, plain-English financial education for Canadians, published by Leigh Grant Financial (https://www.leighgrant.ca) for the Life Ready Facilitated Care community and the public. The site offers articles, free financial calculators (including a Canadian mortgage comparison tool), a free Financial Success Checklist (PDF), a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.
 
 This site is educational only. It is not a group benefits, group investment, or insurance portal, and nothing on it is personalized financial, tax, or legal advice. Questions can be sent to leigh@leighgrant.ca.
 
@@ -16,6 +16,16 @@ This site is educational only. It is not a group benefits, group investment, or 
 ## Templates
 
 - [Complete Financial Spending Plan](https://life-ready-dashboard.lucas-gil.workers.dev/templates): A free, all-in-one Google Sheet covering everything from your monthly budget to your long-term goals. Tabs: Monthly Spending Plan, Personal Financial Snapshot, Dashboard, Goals Tracker, Accounts, Tax Savings, Budget Link. Direct link: https://docs.google.com/spreadsheets/d/17zQUAbBdKj6JEYIH6UAY_od7iSDD0XhGBIOnqNKUn90/edit?usp=sharing
+
+## Calculators
+
+- [Mortgage Repayment Calculator & Comparison Tool](https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage): Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.
+- [Monthly Budget Builder](https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget): Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.
+- [Credit Card Minimum Payment Calculator](https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger): See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.
+- [Debt Avalanche vs. Snowball Calculator](https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare): Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.
+- [Net Worth Calculator](https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth): Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.
+- [The Cost of Spending Today](https://life-ready-dashboard.lucas-gil.workers.dev/calc-opportunity-cost): See what a purchase today could be worth years from now if you invested it instead. A no-judgment opportunity cost calculator for everyday spending decisions.
+- [Canadian Student Loan Repayment Calculator](https://life-ready-dashboard.lucas-gil.workers.dev/calc-student-loan): Model Canadian student loan repayment with provincial interest rates, the live Bank of Canada prime rate, the grace period, and Repayment Assistance Plan (RAP) eligibility.
 
 ## Downloads
 
@@ -36,3 +46,11 @@ This site is educational only. It is not a group benefits, group investment, or 
 - [Financial Education Articles & Resources | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/education): Browse free financial education articles, videos, and templates by topic: budgeting, debt management, credit scores, investing, insurance, and retirement.
 - [Financial Education Videos (Coming Soon) | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/videos): Free financial education videos are coming soon: short lessons on budgeting, paying off debt, credit scores, RRSPs and TFSAs, insurance, and retirement.
 - [Free Budget & Spending Plan Template | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/templates): Get a free Google Sheets spending plan template with a monthly budget, net worth snapshot, goals tracker, and tax savings tab. No sign-up needed to view.
+- [Free Financial Calculators for Canadians | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calculators): Free Canadian financial calculators: mortgage comparison, monthly budget, credit card minimum payments, debt avalanche vs. snowball, net worth, and student loans.
+- [Mortgage Calculator & Comparison Tool (Canada) | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-mortgage): Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.
+- [Free Monthly Budget Calculator (Canada) | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-budget): Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.
+- [Credit Card Minimum Payment Calculator | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger): See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.
+- [Debt Avalanche vs. Snowball Calculator | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-debt-compare): Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.
+- [Net Worth Calculator: Assets vs. Liabilities | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth): Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.
+- [Opportunity Cost Calculator: Spend vs. Invest | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-opportunity-cost): See what a purchase today could be worth years from now if you invested it instead. A no-judgment opportunity cost calculator for everyday spending decisions.
+- [Canadian Student Loan Repayment Calculator | Life Ready](https://life-ready-dashboard.lucas-gil.workers.dev/calc-student-loan): Model Canadian student loan repayment with provincial interest rates, the live Bank of Canada prime rate, the grace period, and Repayment Assistance Plan (RAP) eligibility.

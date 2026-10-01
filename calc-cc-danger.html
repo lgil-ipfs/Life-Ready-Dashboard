@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO:START -->
+    <title>Credit Card Minimum Payment Calculator | Life Ready</title>
+    <meta name="description" content="See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.">
+    <link rel="canonical" href="https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Leigh Grant Financial">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Credit Card Minimum Payment Calculator | Life Ready">
+    <meta property="og:description" content="See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.">
+    <meta property="og:url" content="https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger">
+    <meta property="og:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Credit Card Minimum Payment Calculator | Life Ready">
+    <meta name="twitter:description" content="See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/calculators.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://www.leighgrant.ca/#organization",
+      "name": "Leigh Grant Financial",
+      "url": "https://www.leighgrant.ca",
+      "email": "leigh@leighgrant.ca",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.lucas-gil.workers.dev/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger#webpage",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger",
+      "name": "Credit Card Minimum Payment Calculator | Life Ready",
+      "description": "See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website"
+      },
+      "dateModified": "2026-10-01",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png"
+      },
+      "breadcrumb": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculators",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Credit Card Calculator"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger#app",
+      "name": "Credit Card Minimum Payment Calculator",
+      "description": "See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-cc-danger",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (runs in a web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      },
+      "inLanguage": "en-CA",
+      "author": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
+      }
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
+</head>
+<body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span>
+            <span class="utility-bar-full">Financial information at your fingertips: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
+
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">By Leigh Grant Financial</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home">Home</a>
+            <a href="/education" data-nav="articles">Articles</a>
+            <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
+            <a href="/calculators" data-nav="calculators" class="active" aria-current="page">Calculators</a>
+            <a href="/templates" data-nav="templates">Templates</a>
+        </div>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
+
+<main id="main">
+    <header class="page-header">
+        <div class="container">
+<!-- BREADCRUMB:START -->
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/calculators">Calculators</a></li><li aria-current="page">Credit Card Calculator</li></ol></nav>
+<!-- BREADCRUMB:END -->
+            <span class="subheading">Free Calculator</span>
+            <h1>Credit Card Minimum Payment Calculator</h1>
+            <p>See the real cost of only paying the minimum on a credit card, and how much faster you get out of debt with even a small extra payment.</p>
+<!-- CALCPILLS:START -->
+<div class="calc-hero-pills"><span class="calc-hero-pill">Canadian 2% Minimum</span><span class="calc-hero-pill">Real Payoff Timeline</span><span class="calc-hero-pill">Extra Payment Savings</span></div>
+<!-- CALCPILLS:END -->
+        </div>
+    </header>
+
+    <section class="section-padding section-tight-top">
+        <div class="container">
+            <div class="calc-layout">
+                <div>
+                    <div class="calc-panel">
+                        <h2 class="calc-panel-title">Your credit card details</h2>
+                        <div class="field-group">
+                            <label for="cc-balance">Current balance ($)</label>
+                            <input type="number" id="cc-balance" value="2000" min="0" inputmode="decimal">
+                        </div>
+                        <div class="field-group">
+                            <label for="cc-rate">Annual interest rate (%)</label>
+                            <input type="number" id="cc-rate" value="20.99" min="0" max="40" step="0.01" inputmode="decimal">
+                        </div>
+                        <div class="field-group">
+                            <label for="cc-extra">Extra monthly payment ($) <span class="hint">(optional)</span></label>
+                            <input type="number" id="cc-extra" value="0" min="0" placeholder="e.g. 50" inputmode="decimal">
+                        </div>
+                        <div class="warn-banner">
+                            <strong>How minimum payments usually work in Canada:</strong> most cards set the minimum at a small percentage of your balance (often around 2% to 3%) or a fixed floor like $10, whichever is greater. This calculator uses 2% or $10. Check your statement for your card's exact formula.
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <h2>The minimum payment trap</h2>
+                        <p>Minimum payments shrink as your balance shrinks, so a big share of every payment goes to interest and the balance barely moves. Adding even $25 to $50 a month on top of the minimum can cut years off your payoff and save hundreds or thousands of dollars in interest.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="calc-panel" aria-live="polite">
+                        <h2 class="calc-panel-title">Minimum payment only</h2>
+                        <div class="stat-grid">
+                            <div class="stat-block danger">
+                                <div class="stat-label">Time to pay off</div>
+                                <div class="stat-value danger" id="cc-years-min">0 yrs</div>
+                            </div>
+                            <div class="stat-block danger">
+                                <div class="stat-label">Total interest</div>
+                                <div class="stat-value danger" id="cc-interest-min">$0</div>
+                            </div>
+                        </div>
+                        <div id="extra-results" hidden>
+                            <div class="calc-subtitle">With your extra payment</div>
+                            <div class="stat-grid">
+                                <div class="stat-block">
+                                    <div class="stat-label">New payoff time</div>
+                                    <div class="stat-value" id="cc-years-extra">0 yrs</div>
+                                </div>
+                                <div class="stat-block">
+                                    <div class="stat-label">Total interest</div>
+                                    <div class="stat-value" id="cc-interest-extra">$0</div>
+                                </div>
+                            </div>
+                            <div class="success-banner">
+                                You save <strong id="cc-saved">$0</strong> in interest and pay it off <strong id="cc-months-faster">0 months</strong> sooner.
+                            </div>
+                        </div>
+                        <div id="cc-warning" class="warn-banner" hidden></div>
+                        <div class="chart-wrap">
+                            <canvas id="ccChart" height="280" role="img" aria-label="Credit card balance over time"></canvas>
+                            <div class="chart-legend" id="cc-legend"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="calc-disclaimer">This calculator assumes a minimum payment of 2% of the balance or $10, whichever is greater, interest compounded monthly, and no new purchases. Results are estimates for educational purposes only.</p>
+
+<!-- CALCRELATED:START -->
+<section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep learning</h2>
+    <div class="resource-grid">
+<a href="/article-credit-scores" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 6 min read</span>
+        <h3>Credit Scores in Canada, Explained</h3>
+        <p>What actually affects your credit score, how Canada's two bureaus work, and habits that build credit over time.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/calc-mortgage" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Home Buying</span>
+        <h3>Mortgage Repayment Calculator &amp; Comparison Tool</h3>
+        <p>Compare two mortgages side by side: rate, amortization, payment frequency, and prepayments, with Canadian semi-annual compounding.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+<a href="/calc-debt-compare" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Debt Strategy</span>
+        <h3>Debt Avalanche vs. Snowball Calculator</h3>
+        <p>Have multiple debts? Compare the two most popular repayment strategies side by side, with real numbers, not estimates.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+    </div>
+</section>
+<!-- CALCRELATED:END -->
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">By Leigh Grant Financial</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Leigh Grant Financial</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Videos (Coming Soon)</a></li>
+                    <li><a href="/calculators">Free Calculators</a></li>
+                    <li><a href="/calc-mortgage">Mortgage Comparison Tool</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                    <li><a href="/#checklist">Financial Success Checklist (PDF)</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:leigh@leighgrant.ca">leigh@leighgrant.ca</a></li>
+                    <li><a href="https://www.leighgrant.ca" target="_blank" rel="noopener">leighgrant.ca</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource provided by Leigh Grant Financial for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Content by Leigh Grant Financial</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/calc-common.js"></script>
+<script>
+let ccChart;
+
+function simulate(balance, annualRate, extra) {
+    const monthlyRate = annualRate / 100 / 12;
+    let bal = balance;
+    let totalInterest = 0;
+    let months = 0;
+    const history = [bal];
+    while (bal > 0.01 && months < 1200) {
+        const interest = bal * monthlyRate;
+        totalInterest += interest;
+        bal += interest;
+        let payment = Math.max(bal * 0.02, 10) + extra;
+        if (payment > bal) payment = bal;
+        bal = Math.max(0, bal - payment);
+        months++;
+        if (months % 12 === 0 || bal < 0.01) history.push(bal);
+    }
+    return { months, totalInterest, history, timedOut: months >= 1200 };
+}
+
+const yrs = (m) => (m / 12).toFixed(1) + ' yrs';
+
+function calcCC() {
+    const balance = num('cc-balance');
+    const rate = num('cc-rate');
+    const extra = num('cc-extra');
+    const warning = document.getElementById('cc-warning');
+    if (balance <= 0) return;
+
+    const minOnly = simulate(balance, rate, 0);
+    const withExtra = extra > 0 ? simulate(balance, rate, extra) : null;
+
+    document.getElementById('cc-years-min').textContent = minOnly.timedOut ? '100+ yrs' : yrs(minOnly.months);
+    document.getElementById('cc-interest-min').textContent = fmt(minOnly.totalInterest);
+    warning.hidden = !minOnly.timedOut;
+    if (minOnly.timedOut) warning.textContent = 'At this rate, a 2% minimum payment barely covers the interest, so the balance takes over 100 years to clear. Add an extra monthly payment to see a realistic payoff.';
+
+    const extraBox = document.getElementById('extra-results');
+    extraBox.hidden = !withExtra;
+    if (withExtra) {
+        document.getElementById('cc-years-extra').textContent = yrs(withExtra.months);
+        document.getElementById('cc-interest-extra').textContent = fmt(withExtra.totalInterest);
+        document.getElementById('cc-saved').textContent = fmt(minOnly.totalInterest - withExtra.totalInterest);
+        const faster = minOnly.months - withExtra.months;
+        document.getElementById('cc-months-faster').textContent = faster + ' month' + (faster !== 1 ? 's' : '');
+    }
+
+    const labels = minOnly.history.map((_, i) => 'Yr ' + i);
+    const extraHistory = withExtra ? [...withExtra.history] : [];
+    while (extraHistory.length < minOnly.history.length) extraHistory.push(0);
+
+    const datasets = [{
+        label: 'Minimum payments only', data: minOnly.history,
+        borderColor: PALETTE.danger, backgroundColor: PALETTE.dangerFill, fill: true, tension: 0.35, pointRadius: 0, borderWidth: 2,
+    }];
+    if (withExtra) {
+        datasets.push({
+            label: 'With extra $' + extra + '/mo', data: extraHistory.slice(0, labels.length),
+            borderColor: PALETTE.gold, backgroundColor: PALETTE.goldFill, fill: true, tension: 0.35, pointRadius: 0, borderWidth: 2,
+        });
+    }
+
+    if (ccChart) ccChart.destroy();
+    ccChart = new Chart(document.getElementById('ccChart'), {
+        type: 'line',
+        data: { labels, datasets },
+        options: {
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + c.dataset.label + ': ' + fmt(c.parsed.y) } } },
+            scales: { y: { beginAtZero: true, ticks: { callback: fmtK } }, x: { ticks: { maxTicksLimit: 10 } } },
+        },
+    });
+
+    document.getElementById('cc-legend').innerHTML = datasets
+        .map((d) => `<div class="legend-item"><div class="legend-dot" style="background:${d.borderColor}"></div>${d.label}</div>`)
+        .join('');
+}
+
+document.querySelectorAll('#cc-balance, #cc-rate, #cc-extra').forEach((el) => el.addEventListener('input', calcCC));
+calcCC();
+</script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>

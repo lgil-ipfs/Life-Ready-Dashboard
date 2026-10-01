@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO:START -->
+    <title>Net Worth Calculator: Assets vs. Liabilities | Life Ready</title>
+    <meta name="description" content="Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.">
+    <link rel="canonical" href="https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#D49424">
+    <meta name="author" content="Leigh Grant Financial">
+    <meta property="og:site_name" content="Life Ready Learning Hub">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Net Worth Calculator: Assets vs. Liabilities | Life Ready">
+    <meta property="og:description" content="Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.">
+    <meta property="og:url" content="https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth">
+    <meta property="og:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Life Ready Learning Hub: Free, plain-English financial education">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Net Worth Calculator: Assets vs. Liabilities | Life Ready">
+    <meta name="twitter:description" content="Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.">
+    <meta name="twitter:image" content="https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="apple-touch-icon" href="/assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/calculators.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "FinancialService"
+      ],
+      "@id": "https://www.leighgrant.ca/#organization",
+      "name": "Leigh Grant Financial",
+      "url": "https://www.leighgrant.ca",
+      "email": "leigh@leighgrant.ca",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Canada"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/",
+      "name": "Life Ready Learning Hub",
+      "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://life-ready-dashboard.lucas-gil.workers.dev/education?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth#webpage",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth",
+      "name": "Net Worth Calculator: Assets vs. Liabilities | Life Ready",
+      "description": "Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/#website"
+      },
+      "dateModified": "2026-10-01",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://life-ready-dashboard.lucas-gil.workers.dev/assets/og-image.png"
+      },
+      "breadcrumb": {
+        "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Calculators",
+          "item": "https://life-ready-dashboard.lucas-gil.workers.dev/calculators"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Net Worth Calculator"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth#app",
+      "name": "Net Worth Calculator",
+      "description": "Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.",
+      "url": "https://life-ready-dashboard.lucas-gil.workers.dev/calc-net-worth",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any (runs in a web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CAD"
+      },
+      "inLanguage": "en-CA",
+      "author": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.leighgrant.ca/#organization"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
+      }
+    }
+  ]
+}
+</script>
+<!-- SEO:END -->
+</head>
+<body>
+<!-- HEADER:START -->
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="utility-bar" id="utility-bar">
+    <div class="container utility-bar-content">
+        <span>
+            <span class="utility-bar-full">Financial information at your fingertips: </span>
+            <span class="utility-bar-short">Free budget template: </span>
+            <a href="/templates">Get the spending plan template</a>
+        </span>
+        <button type="button" class="utility-bar-close" id="utility-bar-close" aria-label="Dismiss announcement">&times;</button>
+    </div>
+</div>
+
+<nav aria-label="Main">
+    <div class="container nav-content">
+        <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+            <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
+            <span class="logo-divider" aria-hidden="true"></span>
+            <span class="logo-subtext">By Leigh Grant Financial</span>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="/" data-nav="home">Home</a>
+            <a href="/education" data-nav="articles">Articles</a>
+            <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
+            <a href="/calculators" data-nav="calculators" class="active" aria-current="page">Calculators</a>
+            <a href="/templates" data-nav="templates">Templates</a>
+        </div>
+        <form class="nav-search" role="search" action="/education" method="get">
+            <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
+        </form>
+        <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+</nav>
+<!-- HEADER:END -->
+
+<main id="main">
+    <header class="page-header">
+        <div class="container">
+<!-- BREADCRUMB:START -->
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/calculators">Calculators</a></li><li aria-current="page">Net Worth Calculator</li></ol></nav>
+<!-- BREADCRUMB:END -->
+            <span class="subheading">Free Calculator</span>
+            <h1>Net Worth Calculator</h1>
+            <p>Add up what you own and what you owe to see your net worth. It's normal to start negative, especially with student loans or a new mortgage. What matters is watching the trend move upward.</p>
+<!-- CALCPILLS:START -->
+<div class="calc-hero-pills"><span class="calc-hero-pill">Assets vs. Liabilities</span><span class="calc-hero-pill">Home &amp; Mortgage</span><span class="calc-hero-pill">Track Your Progress</span></div>
+<!-- CALCPILLS:END -->
+        </div>
+    </header>
+
+    <section class="section-padding section-tight-top">
+        <div class="container">
+            <div class="calc-layout">
+                <div>
+                    <div class="calc-panel">
+                        <h2 class="calc-panel-title">Assets (what you own)</h2>
+                        <div class="field-group"><label for="a-cash">Cash, chequing, and savings ($)</label><input type="number" id="a-cash" value="8000" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="a-reg">RRSP, TFSA, FHSA, and pension balances ($)</label><input type="number" id="a-reg" value="25000" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="a-invest">Other investments ($)</label><input type="number" id="a-invest" value="0" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="a-home">Home or property value ($)</label><input type="number" id="a-home" value="0" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="a-vehicle">Vehicle value ($)</label><input type="number" id="a-vehicle" value="12000" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="a-other">Other assets ($)</label><input type="number" id="a-other" value="0" min="0" inputmode="decimal"></div>
+                    </div>
+                    <div class="calc-panel">
+                        <h2 class="calc-panel-title">Liabilities (what you owe)</h2>
+                        <div class="field-group"><label for="l-mortgage">Mortgage balance ($)</label><input type="number" id="l-mortgage" value="0" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="l-car">Car loan or lease ($)</label><input type="number" id="l-car" value="9000" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="l-student">Student loans ($)</label><input type="number" id="l-student" value="6000" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="l-cc">Credit card balances ($)</label><input type="number" id="l-cc" value="1500" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="l-loc">Line of credit or personal loan ($)</label><input type="number" id="l-loc" value="0" min="0" inputmode="decimal"></div>
+                        <div class="field-group"><label for="l-other">Other debt ($)</label><input type="number" id="l-other" value="0" min="0" inputmode="decimal"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="calc-panel" aria-live="polite">
+                        <h2 class="calc-panel-title">Your financial snapshot</h2>
+                        <div class="stat-grid">
+                            <div class="stat-block"><div class="stat-label">Total assets</div><div class="stat-value" id="nw-assets">$0</div></div>
+                            <div class="stat-block danger"><div class="stat-label">Total liabilities</div><div class="stat-value danger" id="nw-liabilities">$0</div></div>
+                        </div>
+                        <div class="result-callout" id="nw-callout">
+                            <div class="rc-label">Your net worth</div>
+                            <div class="rc-value" id="nw-result">$0</div>
+                        </div>
+                        <div class="nw-bar-wrap" aria-hidden="true">
+                            <div class="nw-bar-assets" id="nw-bar-assets"></div>
+                            <div class="nw-bar-liabilities" id="nw-bar-liabilities"></div>
+                        </div>
+                        <div class="chart-wrap">
+                            <canvas id="nwChart" height="260" role="img" aria-label="Assets compared with liabilities"></canvas>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <h2>Negative net worth is common, and temporary</h2>
+                        <p>Early in your career, or right after buying a home, it's normal for what you owe to outweigh what you own. The number that matters most is the <strong>trend</strong>. Recalculate every six or twelve months, or track it in the free <a href="/templates">spending plan template</a>, to confirm you're moving in the right direction.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="calc-disclaimer">Asset and liability values are your own estimates. This tool is for educational purposes only and does not constitute financial advice.</p>
+
+<!-- CALCRELATED:START -->
+<section class="related" aria-labelledby="related-heading">
+    <h2 id="related-heading">Keep learning</h2>
+    <div class="resource-grid">
+<a href="/article-investing-basics" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type">Article · 7 min read</span>
+        <h3>Investing Basics: RRSPs, TFSAs, and Compound Growth</h3>
+        <p>How RRSPs and TFSAs differ, why an employer match is worth capturing, and how compounding works in your favour.</p>
+        <span class="read-link">Read article →</span>
+    </div>
+</a>
+<a href="/calc-mortgage" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Home Buying</span>
+        <h3>Mortgage Repayment Calculator &amp; Comparison Tool</h3>
+        <p>Compare two mortgages side by side: rate, amortization, payment frequency, and prepayments, with Canadian semi-annual compounding.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+<a href="/calc-budget" class="resource-card">
+    <div class="resource-card-body">
+        <span class="resource-type template">Calculator · Budgeting</span>
+        <h3>Monthly Budget Builder</h3>
+        <p>Enter your income and expenses to see your monthly surplus or shortfall, compare against benchmarks, and get smart insights.</p>
+        <span class="read-link">Use the calculator →</span>
+    </div>
+</a>
+    </div>
+</section>
+<!-- CALCRELATED:END -->
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER:START -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-logo-area">
+                <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
+                    <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
+                    <span class="logo-divider" aria-hidden="true"></span>
+                    <span class="logo-subtext">By Leigh Grant Financial</span>
+                </a>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Leigh Grant Financial</p>
+            </div>
+            <div class="footer-links">
+                <h2>Learn</h2>
+                <ul>
+                    <li><a href="/education">All Articles &amp; Resources</a></li>
+                    <li><a href="/videos">Videos (Coming Soon)</a></li>
+                    <li><a href="/calculators">Free Calculators</a></li>
+                    <li><a href="/calc-mortgage">Mortgage Comparison Tool</a></li>
+                    <li><a href="/templates">Free Spending Plan Template</a></li>
+                    <li><a href="/#checklist">Financial Success Checklist (PDF)</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="/article-budgeting-basics">Budgeting</a></li>
+                    <li><a href="/article-debt-management">Paying Down Debt</a></li>
+                    <li><a href="/article-credit-scores">Credit Scores</a></li>
+                    <li><a href="/article-investing-basics">RRSPs &amp; TFSAs</a></li>
+                    <li><a href="/article-insurance-basics">Insurance Basics</a></li>
+                    <li><a href="/article-retirement-planning">Retirement Planning</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h2>Questions?</h2>
+                <ul>
+                    <li><a href="mailto:leigh@leighgrant.ca">leigh@leighgrant.ca</a></li>
+                    <li><a href="https://www.leighgrant.ca" target="_blank" rel="noopener">leighgrant.ca</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            The Life Ready Learning Hub is a free financial education resource provided by Leigh Grant Financial for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are shared as view-only Google Sheets.
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Ready Learning Hub | Content by Leigh Grant Financial</p>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER:END -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/js/calc-common.js"></script>
+<script>
+let nwChart;
+const ASSETS = ['a-cash', 'a-reg', 'a-invest', 'a-home', 'a-vehicle', 'a-other'];
+const LIABS = ['l-mortgage', 'l-car', 'l-student', 'l-cc', 'l-loc', 'l-other'];
+
+function calcNW() {
+    const assets = ASSETS.reduce((s, id) => s + num(id), 0);
+    const liabilities = LIABS.reduce((s, id) => s + num(id), 0);
+    const nw = assets - liabilities;
+    document.getElementById('nw-assets').textContent = fmt(assets);
+    document.getElementById('nw-liabilities').textContent = fmt(liabilities);
+    document.getElementById('nw-result').textContent = fmt(nw);
+    document.getElementById('nw-callout').classList.toggle('danger', nw < 0);
+
+    const total = assets + liabilities;
+    const assetPct = total > 0 ? (assets / total) * 100 : 50;
+    document.getElementById('nw-bar-assets').style.width = assetPct + '%';
+    document.getElementById('nw-bar-liabilities').style.width = (100 - assetPct) + '%';
+
+    if (nwChart) nwChart.destroy();
+    nwChart = new Chart(document.getElementById('nwChart'), {
+        type: 'bar',
+        data: { labels: ['Assets', 'Liabilities'], datasets: [{ data: [assets, liabilities], backgroundColor: [PALETTE.gold, PALETTE.danger], borderRadius: 8, borderSkipped: false }] },
+        options: {
+            plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => ' ' + fmt(c.parsed.y) } } },
+            scales: { y: { beginAtZero: true, ticks: { callback: fmtK } } },
+        },
+    });
+}
+
+[...ASSETS, ...LIABS].forEach((id) => document.getElementById(id).addEventListener('input', calcNW));
+calcNW();
+</script>
+<script src="/js/main.js" defer></script>
+</body>
+</html>

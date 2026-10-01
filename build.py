@@ -152,6 +152,97 @@ TEMPLATES = [
     },
 ]
 
+# Free calculators. Carried over from studentfinancial.ca; the TFSA growth
+# projector is replaced by the mortgage calculator and comparison tool.
+CALCULATORS = [
+    {
+        "file": "calc-mortgage.html",
+        "name": "Mortgage Repayment Calculator &amp; Comparison Tool",
+        "short": "Mortgage Calculator",
+        "category": "Home Buying",
+        "topics": ["debt", "budgeting"],
+        "title": "Mortgage Calculator &amp; Comparison Tool (Canada) | Life Ready",
+        "description": "Free Canadian mortgage calculator: compare two mortgage scenarios side by side, with payment frequency, prepayments, CMHC insurance, and a full amortization schedule.",
+        "card": "Compare two mortgages side by side: rate, amortization, payment frequency, and prepayments, with Canadian semi-annual compounding.",
+        "pills": ["Canadian Semi-Annual Compounding", "Side-by-Side Comparison", "Prepayments", "CMHC Insurance"],
+        "related_article": "article-budgeting-basics.html",
+        "featured": True,
+    },
+    {
+        "file": "calc-budget.html",
+        "name": "Monthly Budget Builder",
+        "short": "Budget Builder",
+        "category": "Budgeting",
+        "topics": ["budgeting"],
+        "title": "Free Monthly Budget Calculator (Canada) | Life Ready",
+        "description": "Build a monthly budget in minutes: enter your income and expenses, compare housing costs to benchmarks for your city, test what-if changes, and save a PDF.",
+        "card": "Enter your income and expenses to see your monthly surplus or shortfall, compare against benchmarks, and get smart insights.",
+        "pills": ["City-Adjusted Benchmarks", "Smart Insights", "PDF Export"],
+        "related_article": "article-budgeting-basics.html",
+    },
+    {
+        "file": "calc-cc-danger.html",
+        "name": "Credit Card Minimum Payment Calculator",
+        "short": "Credit Card Calculator",
+        "category": "Credit",
+        "topics": ["credit", "debt"],
+        "title": "Credit Card Minimum Payment Calculator | Life Ready",
+        "description": "See how long it takes to pay off a credit card making only the minimum payment in Canada, how much interest it costs, and how much an extra payment saves.",
+        "card": "See exactly how long it takes, and how much you really pay, when you only make the minimum payment on a credit card.",
+        "pills": ["Canadian 2% Minimum", "Real Payoff Timeline", "Extra Payment Savings"],
+        "related_article": "article-credit-scores.html",
+    },
+    {
+        "file": "calc-debt-compare.html",
+        "name": "Debt Avalanche vs. Snowball Calculator",
+        "short": "Avalanche vs. Snowball",
+        "category": "Debt Strategy",
+        "topics": ["debt"],
+        "title": "Debt Avalanche vs. Snowball Calculator | Life Ready",
+        "description": "Enter up to five debts and compare the avalanche and snowball repayment methods side by side with a real month-by-month simulation of interest and payoff time.",
+        "card": "Have multiple debts? Compare the two most popular repayment strategies side by side, with real numbers, not estimates.",
+        "pills": ["Real Simulation", "Payoff Order", "Up to 5 Debts"],
+        "related_article": "article-debt-management.html",
+    },
+    {
+        "file": "calc-net-worth.html",
+        "name": "Net Worth Calculator",
+        "short": "Net Worth Calculator",
+        "category": "Net Worth",
+        "topics": ["budgeting", "investing"],
+        "title": "Net Worth Calculator: Assets vs. Liabilities | Life Ready",
+        "description": "Calculate your net worth in minutes by adding up what you own and what you owe, including your home, mortgage, savings, investments, and debts.",
+        "card": "Add up what you own and what you owe, including your home and mortgage, to see your net worth and track it over time.",
+        "pills": ["Assets vs. Liabilities", "Home &amp; Mortgage", "Track Your Progress"],
+        "related_article": "article-investing-basics.html",
+    },
+    {
+        "file": "calc-opportunity-cost.html",
+        "name": "The Cost of Spending Today",
+        "short": "Cost of Spending Today",
+        "category": "Saving",
+        "topics": ["investing", "retirement"],
+        "title": "Opportunity Cost Calculator: Spend vs. Invest | Life Ready",
+        "description": "See what a purchase today could be worth years from now if you invested it instead. A no-judgment opportunity cost calculator for everyday spending decisions.",
+        "card": "See what a purchase today could be worth years from now if invested instead: an honest, no-judgment look at the trade-off.",
+        "pills": ["Opportunity Cost", "Spend vs. Invest", "No Judgment"],
+        "related_article": "article-investing-basics.html",
+    },
+    {
+        "file": "calc-student-loan.html",
+        "name": "Canadian Student Loan Repayment Calculator",
+        "short": "Student Loan Calculator",
+        "category": "Student Loans",
+        "topics": ["debt"],
+        "title": "Canadian Student Loan Repayment Calculator | Life Ready",
+        "description": "Model Canadian student loan repayment with provincial interest rates, the live Bank of Canada prime rate, the grace period, and Repayment Assistance Plan (RAP) eligibility.",
+        "card": "Model your repayment timeline with provincial rates, the grace period, and RAP eligibility, using the live Bank of Canada prime rate.",
+        "pills": ["Live Prime Rate", "All Provinces", "RAP Eligible", "Grace Period"],
+        "related_article": "article-debt-management.html",
+    },
+]
+CALCS_BY_FILE = {c["file"]: c for c in CALCULATORS}
+
 # Free downloadable PDFs (served from the site root).
 DOWNLOADS = [
     {
@@ -234,6 +325,33 @@ for a in ARTICLES:
         "priority": "0.8",
         "changefreq": "monthly",
         "article": a,
+    })
+
+
+PAGES.append({
+    "file": "calculators.html",
+    "path": "/calculators",
+    "kind": "calculators",
+    "nav": "calculators",
+    "title": "Free Financial Calculators for Canadians | Life Ready",
+    "description": "Free Canadian financial calculators: mortgage comparison, monthly budget, credit card minimum payments, debt avalanche vs. snowball, net worth, and student loans.",
+    "breadcrumbs": [("Home", "/"), ("Calculators", None)],
+    "priority": "0.9",
+    "changefreq": "monthly",
+})
+
+for c in CALCULATORS:
+    PAGES.append({
+        "file": c["file"],
+        "path": "/" + c["file"].removesuffix(".html"),
+        "kind": "calculator",
+        "nav": "calculators",
+        "title": c["title"],
+        "description": c["description"],
+        "breadcrumbs": [("Home", "/"), ("Calculators", "/calculators"), (c["short"], None)],
+        "priority": "0.8",
+        "changefreq": "monthly",
+        "calc": c,
     })
 
 # ---------------------------------------------------------------------------
@@ -332,6 +450,8 @@ def seo_block(page, text):
         '    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap">',
         '    <link rel="stylesheet" href="/css/styles.css">',
     ]
+    if page["kind"] in ("calculator", "calculators"):
+        lines.append('    <link rel="stylesheet" href="/css/calculators.css">')
 
     graph = [
         {
@@ -358,7 +478,7 @@ def seo_block(page, text):
         },
     ]
 
-    webpage_type = {"home": "WebPage", "library": "CollectionPage", "videos": "CollectionPage", "templates": "CollectionPage", "article": "WebPage"}[page["kind"]]
+    webpage_type = {"home": "WebPage", "library": "CollectionPage", "videos": "CollectionPage", "templates": "CollectionPage", "article": "WebPage", "calculators": "CollectionPage", "calculator": "WebPage"}[page["kind"]]
     webpage = {
         "@type": webpage_type,
         "@id": url + "#webpage",
@@ -416,6 +536,36 @@ def seo_block(page, text):
             "itemListElement": [
                 {"@type": "ListItem", "position": i + 1, "url": abs_url(page_url(a["file"])), "name": a["headline"]}
                 for i, a in enumerate(ARTICLES)
+            ],
+        })
+
+    if page["kind"] == "calculator":
+        c = page["calc"]
+        graph.append({
+            "@type": "WebApplication",
+            "@id": url + "#app",
+            "name": strip_tags(c["name"]),
+            "description": desc,
+            "url": url,
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Any (runs in a web browser)",
+            "browserRequirements": "Requires JavaScript",
+            "isAccessibleForFree": True,
+            "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CAD"},
+            "inLanguage": LANG,
+            "author": {"@id": ORG_ID},
+            "publisher": {"@id": ORG_ID},
+            "audience": {"@type": "Audience", "audienceType": AUDIENCE},
+        })
+
+    if page["kind"] == "calculators":
+        graph.append({
+            "@type": "ItemList",
+            "@id": url + "#calculators",
+            "name": "Free financial calculators",
+            "itemListElement": [
+                {"@type": "ListItem", "position": i + 1, "url": abs_url(page_url(c["file"])), "name": strip_tags(c["name"])}
+                for i, c in enumerate(CALCULATORS)
             ],
         })
 
@@ -596,11 +746,59 @@ def related_block(a):
     return "\n".join(parts)
 
 
+def calc_card(c, heading="h3"):
+    return (
+        f'<a href="{page_url(c["file"])}" class="resource-card">\n'
+        '    <div class="resource-card-body">\n'
+        f'        <span class="resource-type template">Calculator · {c["category"]}</span>\n'
+        f'        <{heading}>{c["name"]}</{heading}>\n'
+        f'        <p>{c["card"]}</p>\n'
+        '        <span class="read-link">Use the calculator →</span>\n'
+        "    </div>\n"
+        "</a>"
+    )
+
+
+def calc_hub_block():
+    out = []
+    for c in CALCULATORS:
+        badge = '\n    <span class="new-badge">New</span>' if c.get("featured") else ""
+        out.append(
+            f'<a href="{page_url(c["file"])}" class="calc-tile{" featured" if c.get("featured") else ""}">{badge}\n'
+            f'    <span class="category">{c["category"]}</span>\n'
+            f'    <h2>{c["name"]}</h2>\n'
+            f'    <p>{c["card"]}</p>\n'
+            '    <span class="action-link">Use Calculator →</span>\n'
+            "</a>"
+        )
+    return "\n".join(out)
+
+
+def calc_header_block(c):
+    pills = "".join(f'<span class="calc-hero-pill">{p}</span>' for p in c["pills"])
+    return f'<div class="calc-hero-pills">{pills}</div>'
+
+
+def calc_related_block(c):
+    a = ARTICLES_BY_FILE[c["related_article"]]
+    others = [x for x in CALCULATORS if x["file"] != c["file"] and set(x["topics"]) & set(c["topics"])][:2]
+    if len(others) < 2:
+        others += [x for x in CALCULATORS if x["file"] != c["file"] and x not in others][: 2 - len(others)]
+    cards = [article_card(a)] + [calc_card(x) for x in others]
+    return (
+        '<section class="related" aria-labelledby="related-heading">\n'
+        '    <h2 id="related-heading">Keep learning</h2>\n'
+        '    <div class="resource-grid">\n' + "\n".join(cards) + "\n    </div>\n"
+        "</section>"
+    )
+
+
 def library_block():
     groups = []
     for slug, name, desc in TOPICS:
         cards = [article_card(a) for a in ARTICLES if a["topic"] == slug]
         cards += [template_card_small(t) for t in TEMPLATES if slug in t["topics"]]
+        cards += [calc_card(c) for c in CALCULATORS if slug in c["topics"]]
         cards += [video_card(v) for v in VIDEOS if v["topic"] == slug]
         groups.append(
             f'<section class="category-group" id="{slug}" data-category="{slug}" aria-labelledby="{slug}-heading">\n'
@@ -674,7 +872,7 @@ def write_llms():
         f"# {SITE_NAME}",
         "",
         f"> {SITE_TAGLINE} for Canadians, published by {PUBLISHER['name']} ({PUBLISHER['url']}) for the Life Ready Facilitated Care community and the public. "
-        "The site offers articles, a free Financial Success Checklist (PDF), a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.",
+        "The site offers articles, free financial calculators (including a Canadian mortgage comparison tool), a free Financial Success Checklist (PDF), a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.",
         "",
         "This site is educational only. It is not a group benefits, group investment, or insurance portal, and nothing on it is personalized financial, tax, or legal advice. "
         f"Questions can be sent to {PUBLISHER['email']}.",
@@ -687,6 +885,9 @@ def write_llms():
     out += ["", "## Templates", ""]
     for t in TEMPLATES:
         out.append(f"- [{t['name']}]({abs_url('/templates')}): {t['description']} Tabs: {', '.join(t['tabs'])}. Direct link: {t['url']}")
+    out += ["", "## Calculators", ""]
+    for c in CALCULATORS:
+        out.append(f"- [{strip_tags(c['name'])}]({abs_url(page_url(c['file']))}): {strip_tags(c['description'])}")
     out += ["", "## Downloads", ""]
     for d in DOWNLOADS:
         out.append(f"- [{d['name']} (PDF)]({abs_url(d['path'])}): {d['description']}")
@@ -720,6 +921,10 @@ def build():
         text = replace_block(text, "LATEST", latest_block(), page["file"])
         text = replace_block(text, "VIDEOS", videos_block(), page["file"])
         text = replace_block(text, "TEMPLATES", templates_block(), page["file"])
+        text = replace_block(text, "CALCHUB", calc_hub_block(), page["file"])
+        if page["kind"] == "calculator":
+            text = replace_block(text, "CALCPILLS", calc_header_block(page["calc"]), page["file"])
+            text = replace_block(text, "CALCRELATED", calc_related_block(page["calc"]), page["file"])
         path.write_text(text)
         print("built", page["file"])
     write_sitemap()

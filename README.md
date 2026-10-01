@@ -23,6 +23,12 @@ Set `youtube_id`, `upload_date`, and `duration` on the entry in `VIDEOS` in
 page, its topic's library section, and matching articles, plus VideoObject
 schema.
 
+### Calculators
+
+Calculator pages are `calc-*.html` with their own inline scripts plus
+`js/calc-common.js` (formatting, palette, Chart.js defaults). Add or rename
+one in the `CALCULATORS` catalogue in `build.py`, then rebuild.
+
 ### Changing the domain
 
 Update `SITE_URL` in `build.py` and rebuild.
