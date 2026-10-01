@@ -1157,3 +1157,30 @@ summary:focus-visible {
     .hero-has-image { padding: 90px 0 80px; }
     .hero-overlay { background: rgba(250, 248, 244, 0.88); }
 }
+
+/* Scroll cue (templates page: points to the how-to section) */
+.scroll-cue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: max-content;
+    margin: 36px auto 0;
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.scroll-cue svg { animation: scroll-cue-bounce 1.8s ease-in-out infinite; }
+.scroll-cue:hover { color: var(--primary); }
+
+@keyframes scroll-cue-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-cue svg { animation: none; }
+}
+
+#how-to-use { scroll-margin-top: 80px; }
