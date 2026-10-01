@@ -34,7 +34,7 @@ ROOT = Path(__file__).parent
 # Site settings
 # ---------------------------------------------------------------------------
 
-SITE_URL = "https://life-ready-dashboard.vercel.app"
+SITE_URL = "https://life-ready-dashboard.lucas-gil.workers.dev"
 SITE_NAME = "Life Ready Learning Hub"
 SITE_TAGLINE = "Free, plain-English financial education"
 LOCALE = "en_CA"
@@ -149,6 +149,17 @@ TEMPLATES = [
         "url": "https://docs.google.com/spreadsheets/d/17zQUAbBdKj6JEYIH6UAY_od7iSDD0XhGBIOnqNKUn90/edit?usp=sharing",
         "tabs": ["Monthly Spending Plan", "Personal Financial Snapshot", "Dashboard", "Goals Tracker", "Accounts", "Tax Savings", "Budget Link"],
         "topics": ["budgeting", "debt", "investing"],
+    },
+]
+
+# Free downloadable PDFs (served from the site root).
+DOWNLOADS = [
+    {
+        "id": "checklist",
+        "name": "Financial Success Checklist",
+        "description": "A free, six-page printable PDF: a practical guide to building confidence with money, one step at a time. Created by Leigh Grant Financial.",
+        "path": "/Life%20Ready%20Checklist.pdf",
+        "page": "/#checklist",
     },
 ]
 
@@ -408,6 +419,21 @@ def seo_block(page, text):
             ],
         })
 
+    if page["kind"] == "home":
+        for d in DOWNLOADS:
+            graph.append({
+                "@type": "DigitalDocument",
+                "@id": url + "#" + d["id"],
+                "name": d["name"],
+                "description": d["description"],
+                "url": abs_url(d["path"]),
+                "encodingFormat": "application/pdf",
+                "isAccessibleForFree": True,
+                "author": {"@id": ORG_ID},
+                "learningResourceType": "Checklist",
+                "inLanguage": LANG,
+            })
+
     if page["kind"] == "templates":
         for t in TEMPLATES:
             graph.append({
@@ -648,7 +674,7 @@ def write_llms():
         f"# {SITE_NAME}",
         "",
         f"> {SITE_TAGLINE} for Canadians, published by {PUBLISHER['name']} ({PUBLISHER['url']}) for the Life Ready Facilitated Care community and the public. "
-        "The site offers articles, a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.",
+        "The site offers articles, a free Financial Success Checklist (PDF), a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.",
         "",
         "This site is educational only. It is not a group benefits, group investment, or insurance portal, and nothing on it is personalized financial, tax, or legal advice. "
         f"Questions can be sent to {PUBLISHER['email']}.",
@@ -661,6 +687,9 @@ def write_llms():
     out += ["", "## Templates", ""]
     for t in TEMPLATES:
         out.append(f"- [{t['name']}]({abs_url('/templates')}): {t['description']} Tabs: {', '.join(t['tabs'])}. Direct link: {t['url']}")
+    out += ["", "## Downloads", ""]
+    for d in DOWNLOADS:
+        out.append(f"- [{d['name']} (PDF)]({abs_url(d['path'])}): {d['description']}")
     out += ["", "## Videos", ""]
     for v in VIDEOS:
         status = f"https://www.youtube.com/watch?v={v['youtube_id']}" if v["youtube_id"] else "coming soon"

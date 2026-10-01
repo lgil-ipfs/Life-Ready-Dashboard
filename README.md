@@ -1,8 +1,10 @@
 # Life Ready Learning Hub
 
 Free financial education site (articles, videos, templates) for the Life Ready
-community, built by Leigh Grant Financial Static HTML, deployed
-on Vercel.
+community, built by Leigh Grant Financial. Static HTML, deployed
+on Cloudflare Workers at https://life-ready-dashboard.lucas-gil.workers.dev
+(auto-deploys from `main`). `.assetsignore` keeps build sources private and
+`_redirects` holds permanent redirects.
 
 ## Editing content
 

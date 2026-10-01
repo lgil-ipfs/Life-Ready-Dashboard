@@ -39,4 +39,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://life-ready-dashboard.vercel.app/sitemap.xml
+Sitemap: https://life-ready-dashboard.lucas-gil.workers.dev/sitemap.xml

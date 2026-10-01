@@ -1,0 +1,8 @@
+# Source files that Cloudflare should not serve publicly
+.git
+.gitignore
+.assetsignore
+.DS_Store
+partials
+build.py
+README.md
