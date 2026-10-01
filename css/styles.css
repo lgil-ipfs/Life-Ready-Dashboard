@@ -152,10 +152,6 @@ img { max-width: 100%; display: block; }
     padding-right: 30px;
 }
 
-.utility-bar-icon {
-    display: flex;
-    flex-shrink: 0;
-}
 
 .utility-bar a {
     text-decoration: underline;
@@ -418,18 +414,6 @@ nav[aria-label="Main"] {
 
 .connector-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-5px); }
 
-.connector-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-tint);
-    color: var(--primary);
-}
-
-.connector-icon svg { width: 22px; height: 22px; }
 
 .connector-card h3 { font-size: 1.2rem; }
 
