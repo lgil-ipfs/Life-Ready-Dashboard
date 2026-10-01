@@ -1,7 +1,7 @@
 # Life Ready Learning Hub
 
 Free financial education site (articles, videos, templates) for the Life Ready
-community, built by Iberian Pacific Financial Services Inc. Static HTML, deployed
+community, built by Leigh Grant Financial Static HTML, deployed
 on Vercel.
 
 ## Editing content

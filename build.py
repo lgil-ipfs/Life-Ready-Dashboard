@@ -40,13 +40,12 @@ SITE_TAGLINE = "Free, plain-English financial education"
 LOCALE = "en_CA"
 LANG = "en-CA"
 OG_IMAGE = "/assets/og-image.png"
-LAST_UPDATED = "2026-09-30"
+LAST_UPDATED = "2026-10-01"
 
 PUBLISHER = {
-    "name": "Iberian Pacific Financial Services Inc.",
-    "url": "https://iberianpacific.ca",
-    "email": "support@iberianpacific.ca",
-    "phone": "+1-604-916-8819",
+    "name": "Leigh Grant Financial",
+    "url": "https://www.leighgrant.ca",
+    "email": "leigh@leighgrant.ca",
 }
 
 AUDIENCE = "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
@@ -193,8 +192,8 @@ PAGES = [
         "path": "/videos",
         "kind": "videos",
         "nav": "videos",
-        "title": "Financial Education Videos | Life Ready Learning Hub",
-        "description": "Short, free financial education videos on budgeting, paying off debt, credit scores, RRSPs and TFSAs, insurance, and retirement planning in Canada.",
+        "title": "Financial Education Videos (Coming Soon) | Life Ready",
+        "description": "Free financial education videos are coming soon: short lessons on budgeting, paying off debt, credit scores, RRSPs and TFSAs, insurance, and retirement.",
         "breadcrumbs": [("Home", "/"), ("Videos", None)],
         "priority": "0.8",
         "changefreq": "weekly",
@@ -330,9 +329,7 @@ def seo_block(page, text):
             "name": PUBLISHER["name"],
             "url": PUBLISHER["url"],
             "email": PUBLISHER["email"],
-            "telephone": PUBLISHER["phone"],
             "areaServed": {"@type": "Country", "name": "Canada"},
-            "address": {"@type": "PostalAddress", "addressRegion": "BC", "addressCountry": "CA"},
         },
         {
             "@type": "WebSite",
@@ -651,7 +648,7 @@ def write_llms():
         f"# {SITE_NAME}",
         "",
         f"> {SITE_TAGLINE} for Canadians, published by {PUBLISHER['name']} ({PUBLISHER['url']}) for the Life Ready Facilitated Care community and the public. "
-        "The site offers articles, short videos, and a free Google Sheets spending plan template covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.",
+        "The site offers articles, a free Google Sheets spending plan template, and short videos (coming soon) covering budgeting, debt, credit, investing (RRSPs and TFSAs), insurance, and retirement planning in Canada.",
         "",
         "This site is educational only. It is not a group benefits, group investment, or insurance portal, and nothing on it is personalized financial, tax, or legal advice. "
         f"Questions can be sent to {PUBLISHER['email']}.",

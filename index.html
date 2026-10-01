@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://life-ready-dashboard.vercel.app/">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#D49424">
-    <meta name="author" content="Iberian Pacific Financial Services Inc.">
+    <meta name="author" content="Leigh Grant Financial">
     <meta property="og:site_name" content="Life Ready Learning Hub">
     <meta property="og:locale" content="en_CA">
     <meta property="og:type" content="website">
@@ -39,19 +39,13 @@
         "Organization",
         "FinancialService"
       ],
-      "@id": "https://iberianpacific.ca/#organization",
-      "name": "Iberian Pacific Financial Services Inc.",
-      "url": "https://iberianpacific.ca",
-      "email": "support@iberianpacific.ca",
-      "telephone": "+1-604-916-8819",
+      "@id": "https://www.leighgrant.ca/#organization",
+      "name": "Leigh Grant Financial",
+      "url": "https://www.leighgrant.ca",
+      "email": "leigh@leighgrant.ca",
       "areaServed": {
         "@type": "Country",
         "name": "Canada"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "BC",
-        "addressCountry": "CA"
       }
     },
     {
@@ -62,7 +56,7 @@
       "description": "Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement for Canadians.",
       "inLanguage": "en-CA",
       "publisher": {
-        "@id": "https://iberianpacific.ca/#organization"
+        "@id": "https://www.leighgrant.ca/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
@@ -83,7 +77,7 @@
       "isPartOf": {
         "@id": "https://life-ready-dashboard.vercel.app/#website"
       },
-      "dateModified": "2026-09-30",
+      "dateModified": "2026-10-01",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://life-ready-dashboard.vercel.app/assets/og-image.png"
@@ -141,7 +135,7 @@
           "name": "What is the Life Ready Learning Hub?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Life Ready Learning Hub is a free financial education website with articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement planning in Canada. It was created by Iberian Pacific Financial Services Inc. for the Life Ready Facilitated Care community and is open to everyone."
+            "text": "The Life Ready Learning Hub is a free financial education website with articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement planning in Canada. It was created by Leigh Grant Financial for the Life Ready Facilitated Care community and is open to everyone."
           }
         },
         {
@@ -149,7 +143,7 @@
           "name": "Is it really free? Do I need an account?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, everything is free and there is no account or sign-up. You can read every article, watch every video, and view the spending plan template without providing any personal information."
+            "text": "Yes, everything is free and there is no account or sign-up. You can read every article, view the spending plan template, and watch videos once they launch, without providing any personal information."
           }
         },
         {
@@ -209,12 +203,12 @@
         <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
             <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44">
             <span class="logo-divider" aria-hidden="true"></span>
-            <span class="logo-subtext">Learning Hub</span>
+            <span class="logo-subtext">By Leigh Grant Financial</span>
         </a>
         <div class="nav-links" id="nav-links">
             <a href="/" data-nav="home" class="active" aria-current="page">Home</a>
             <a href="/education" data-nav="articles">Articles</a>
-            <a href="/videos" data-nav="videos">Videos</a>
+            <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
             <a href="/templates" data-nav="templates">Templates</a>
         </div>
         <form class="nav-search" role="search" action="/education" method="get">
@@ -236,12 +230,16 @@
 <!-- HEADER:END -->
 
 <main id="main">
-    <header class="hero">
-        <div class="hero-blob" aria-hidden="true"></div>
+    <header class="hero hero-has-image">
+        <picture class="hero-image">
+            <source type="image/webp" srcset="/assets/hero-planning-960.webp 960w, /assets/hero-planning-1920.webp 1920w" sizes="100vw">
+            <img src="/assets/hero-planning-1920.jpg" alt="Person writing a monthly budget in a planner next to a laptop" width="1920" height="1280" fetchpriority="high">
+        </picture>
+        <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container">
             <span class="hero-eyebrow">Free Financial Education</span>
             <h1>Practical money lessons for every stage of life.</h1>
-            <p>The Life Ready Learning Hub offers free, plain-English articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement in Canada. No account, no sign-up, no sales pitch.</p>
+            <p>The Life Ready Learning Hub offers free, plain-English articles and templates, with videos coming soon, on budgeting, debt, credit, investing, insurance, and retirement in Canada. No account, no sign-up, no sales pitch.</p>
             <div class="hero-btns">
                 <a href="/education" class="btn btn-primary">Browse Articles</a>
                 <a href="/templates" class="btn btn-outline">Get the Free Template</a>
@@ -278,10 +276,10 @@
                             <path d="M10 9.5V14.5L14.5 12L10 9.5Z" fill="currentColor"/>
                         </svg>
                     </div>
-                    <span class="connector-tag">Watch</span>
+                    <span class="connector-tag">Watch · Coming Soon</span>
                     <h3>Videos</h3>
-                    <p>Short video lessons that walk through each topic step by step, so you can learn on the go. New videos are being added.</p>
-                    <a href="/videos" class="btn btn-primary btn-block">Visit the Video Library</a>
+                    <p>Short video lessons that walk through each topic step by step are coming soon. See what's on the way.</p>
+                    <a href="/videos" class="btn btn-outline btn-block">Videos Coming Soon</a>
                 </div>
 
                 <div class="connector-card">
@@ -383,11 +381,11 @@
             <div class="detail-grid">
                 <div class="detail-card">
                     <h2 id="about-heading">About the Life Ready Learning Hub</h2>
-                    <p>The Life Ready Learning Hub is a free financial education resource created for the Life Ready Facilitated Care community by Iberian Pacific Financial Services Inc., a Canadian financial services firm. Anyone is welcome to use it.</p>
+                    <p>The Life Ready Learning Hub is a free financial education resource created for the Life Ready Facilitated Care community by Leigh Grant Financial. Anyone is welcome to use it.</p>
                     <h3>What you'll find here</h3>
                     <ul>
                         <li>Plain-English articles on budgeting, debt, credit, investing, insurance, and retirement</li>
-                        <li>Short video lessons on the same topics</li>
+                        <li>Short video lessons on the same topics (coming soon)</li>
                         <li>A free, view-only Google Sheets spending plan template</li>
                     </ul>
                     <p>This hub is for education only. It is not a benefits, insurance, or investment account portal, and nothing here is personalized financial advice.</p>
@@ -399,7 +397,7 @@
                 <div class="cta-card">
                     <h3>Have a question?</h3>
                     <p>Can't find what you're looking for, or want a topic covered? Let us know.</p>
-                    <a href="mailto:support@iberianpacific.ca" class="btn btn-primary btn-block">Email Us</a>
+                    <a href="mailto:leigh@leighgrant.ca" class="btn btn-primary btn-block">Email Us</a>
                 </div>
             </div>
         </div>
@@ -413,11 +411,11 @@
             </div>
             <details class="faq-item">
                 <summary>What is the Life Ready Learning Hub?</summary>
-                <div class="faq-answer"><p>The Life Ready Learning Hub is a free financial education website with articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement planning in Canada. It was created by Iberian Pacific Financial Services Inc. for the Life Ready Facilitated Care community and is open to everyone.</p></div>
+                <div class="faq-answer"><p>The Life Ready Learning Hub is a free financial education website with articles, videos, and templates on budgeting, debt, credit, investing, insurance, and retirement planning in Canada. It was created by Leigh Grant Financial for the Life Ready Facilitated Care community and is open to everyone.</p></div>
             </details>
             <details class="faq-item">
                 <summary>Is it really free? Do I need an account?</summary>
-                <div class="faq-answer"><p>Yes, everything is free and there is no account or sign-up. You can read every article, watch every video, and view the spending plan template without providing any personal information.</p></div>
+                <div class="faq-answer"><p>Yes, everything is free and there is no account or sign-up. You can read every article, view the spending plan template, and watch videos once they launch, without providing any personal information.</p></div>
             </details>
             <details class="faq-item">
                 <summary>Is this financial advice?</summary>
@@ -443,15 +441,15 @@
                 <a href="/" class="logo" aria-label="Life Ready Learning Hub home">
                     <img src="/assets/logo.png" alt="Life Ready" class="logo-icon" width="84" height="44" loading="lazy">
                     <span class="logo-divider" aria-hidden="true"></span>
-                    <span class="logo-subtext">Learning Hub</span>
+                    <span class="logo-subtext">By Leigh Grant Financial</span>
                 </a>
-                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Iberian Pacific Financial Services Inc.</p>
+                <p>Free, plain-English financial education on budgeting, debt, credit, investing, insurance, and retirement. Created for the Life Ready Facilitated Care community by Leigh Grant Financial</p>
             </div>
             <div class="footer-links">
                 <h2>Learn</h2>
                 <ul>
                     <li><a href="/education">All Articles &amp; Resources</a></li>
-                    <li><a href="/videos">Video Library</a></li>
+                    <li><a href="/videos">Videos (Coming Soon)</a></li>
                     <li><a href="/templates">Free Spending Plan Template</a></li>
                 </ul>
             </div>
@@ -469,20 +467,19 @@
             <div class="footer-links">
                 <h2>Questions?</h2>
                 <ul>
-                    <li><a href="mailto:support@iberianpacific.ca">support@iberianpacific.ca</a></li>
-                    <li><a href="tel:+16049168819">604-916-8819</a></li>
-                    <li><a href="https://iberianpacific.ca" target="_blank" rel="noopener">iberianpacific.ca</a></li>
+                    <li><a href="mailto:leigh@leighgrant.ca">leigh@leighgrant.ca</a></li>
+                    <li><a href="https://www.leighgrant.ca" target="_blank" rel="noopener">leighgrant.ca</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-disclaimer">
-            The Life Ready Learning Hub is a free financial education resource built and operated by Iberian Pacific Financial Services Inc. ("Iberian Pacific") for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
-            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are owned and managed by Iberian Pacific and shared as view-only Google Sheets.
+            The Life Ready Learning Hub is a free financial education resource provided by Leigh Grant Financial for the Life Ready Facilitated Care ("Life Ready") community and the public. It is for educational purposes only. It is not a group investment, group benefits, or insurance plan portal, and it does not provide access to any account or policy.<br><br>
+            All articles, videos, and templates are provided for general educational and informational purposes only and do not constitute financial, investment, tax, insurance, or legal advice. Always consult a qualified professional about your own situation before making financial decisions. Templates are owned and managed by Iberian Pacific Financial Services Inc. and shared as view-only Google Sheets.
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 Life Ready Learning Hub | Created by Iberian Pacific Financial Services Inc.</p>
+            <p>&copy; 2026 Life Ready Learning Hub | Content by Leigh Grant Financial</p>
         </div>
     </div>
 </footer>
