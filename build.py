@@ -48,6 +48,10 @@ PUBLISHER = {
     "email": "leigh@leighgrant.ca",
 }
 
+# Booking link for the "Let's Talk" buttons (Leigh's calendar). Until it is
+# set, the buttons open an email to Leigh instead.
+BOOKING_URL = ""
+
 AUDIENCE = "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
 
 # ---------------------------------------------------------------------------
@@ -633,8 +637,21 @@ def seo_block(page, text):
     return "\n".join(lines)
 
 
+def booking_link():
+    if BOOKING_URL:
+        return BOOKING_URL, ' target="_blank" rel="noopener"'
+    return "mailto:" + PUBLISHER["email"] + "?subject=Let%27s%20talk", ""
+
+
+def booking_block():
+    href, attrs = booking_link()
+    return f'<a href="{href}"{attrs}>We\'re here for you.</a>'
+
+
 def header_block(page):
     text = (ROOT / "partials/header.html").read_text()
+    href, attrs = booking_link()
+    text = text.replace("{booking_href}", href).replace("{booking_attrs}", attrs)
     return text.replace(f'data-nav="{page["nav"]}"', f'data-nav="{page["nav"]}" class="active" aria-current="page"')
 
 
@@ -922,6 +939,7 @@ def build():
         text = replace_block(text, "VIDEOS", videos_block(), page["file"])
         text = replace_block(text, "TEMPLATES", templates_block(), page["file"])
         text = replace_block(text, "CALCHUB", calc_hub_block(), page["file"])
+        text = replace_block(text, "BOOKING", booking_block(), page["file"])
         if page["kind"] == "calculator":
             text = replace_block(text, "CALCPILLS", calc_header_block(page["calc"]), page["file"])
             text = replace_block(text, "CALCRELATED", calc_related_block(page["calc"]), page["file"])

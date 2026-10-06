@@ -729,6 +729,8 @@ input[type="range"].styled-range::-moz-range-thumb {
     font-family: 'DM Sans', sans-serif;
 }
 
+.field-row .field-hint { font-size: 0.8rem; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+
 .field-row input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 3px var(--primary-tint); }
 
 .results-sticky { position: sticky; top: 100px; }

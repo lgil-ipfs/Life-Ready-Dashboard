@@ -169,6 +169,7 @@
             <a href="/videos" data-nav="videos">Videos <span class="nav-badge">Soon</span></a>
             <a href="/calculators" data-nav="calculators" class="active" aria-current="page">Calculators</a>
             <a href="/templates" data-nav="templates">Templates</a>
+            <a href="mailto:leigh@leighgrant.ca?subject=Let%27s%20talk" class="btn btn-primary nav-links-cta">Let's Talk</a>
         </div>
         <form class="nav-search" role="search" action="/education" method="get">
             <label for="nav-search-input" class="visually-hidden">Search articles, videos, and templates</label>
@@ -178,6 +179,7 @@
             </svg>
             <input type="search" id="nav-search-input" name="q" placeholder="Search topics...">
         </form>
+        <a href="mailto:leigh@leighgrant.ca?subject=Let%27s%20talk" class="btn btn-primary nav-cta">Let's Talk</a>
         <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
             <span></span>
             <span></span>
@@ -281,6 +283,11 @@
                             <div class="field-row">
                                 <label for="ex-childcare">Childcare and kids' activities</label>
                                 <input type="number" id="ex-childcare" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                            </div>
+                            <div class="field-row">
+                                <label for="ex-remit">Money sent to family (in Canada or abroad)</label>
+                                <input type="number" id="ex-remit" placeholder="0" min="0" class="exp-input" inputmode="decimal">
+                                <p class="field-hint">Include transfer fees. Supporting family back home is a real priority, so plan for it like any other bill.</p>
                             </div>
                             <div class="field-row">
                                 <label for="ex-subs">Subscriptions and memberships</label>
@@ -456,7 +463,7 @@ const BENCHMARKS = {
     tier3: { housing: 0.30, food: 0.12, transport: 0.14, fun: 0.08, label: 'smaller community' },
 };
 const INC = ['in-pay', 'in-partner', 'in-side', 'in-benefits', 'in-other'];
-const EXP = ['ex-housing', 'ex-utilities', 'ex-groceries', 'ex-dining', 'ex-transport', 'ex-comms', 'ex-insurance', 'ex-childcare', 'ex-subs', 'ex-debt', 'ex-care', 'ex-fun', 'ex-savings', 'ex-other'];
+const EXP = ['ex-housing', 'ex-utilities', 'ex-groceries', 'ex-dining', 'ex-transport', 'ex-comms', 'ex-insurance', 'ex-childcare', 'ex-remit', 'ex-subs', 'ex-debt', 'ex-care', 'ex-fun', 'ex-savings', 'ex-other'];
 const sum = (ids) => ids.reduce((a, id) => a + num(id), 0);
 
 function showStep(step) {
@@ -493,7 +500,8 @@ function runCalc() {
         Food: v('ex-groceries') + v('ex-dining'),
         Transport: v('ex-transport'),
         Bills: v('ex-comms') + v('ex-insurance') + v('ex-subs'),
-        Family: v('ex-childcare'),
+        'Kids & childcare': v('ex-childcare'),
+        'Family support': v('ex-remit'),
         Debt: v('ex-debt'),
         Lifestyle: v('ex-care') + v('ex-fun'),
         Savings: v('ex-savings'),
@@ -542,12 +550,15 @@ function generateInsights(income, diff, groups, b) {
             items.push(`Housing (including utilities) takes ${Math.round(housingShare * 100)}% of your income, above the rough ${Math.round(b.housing * 100)}% benchmark for a ${b.label}. That's common in today's market, but it leaves less room elsewhere, so it's worth keeping other categories tight.`);
         }
         if (diff < 0) {
-            const biggest = Object.entries(groups).filter(([k]) => !['Housing', 'Savings'].includes(k)).sort((x, y) => y[1] - x[1])[0];
+            const biggest = Object.entries(groups).filter(([k]) => !['Housing', 'Savings', 'Family support'].includes(k)).sort((x, y) => y[1] - x[1])[0];
             items.push(`You're spending ${fmt(Math.abs(diff))} more than you bring in each month. Your largest flexible category is ${biggest[0].toLowerCase()} at ${fmt(biggest[1])}, which may be the easiest place to adjust.`);
         } else if (diff < 100) {
             items.push('You\'re in the green, but it\'s tight. Even $50 a month set aside in an emergency fund can keep a surprise car repair or bill off your credit card.');
         } else {
             items.push(`You have a ${fmt(diff)} monthly surplus. Giving every dollar a job, like an emergency fund, extra debt payments, or TFSA or RRSP contributions, helps it build real progress instead of disappearing.`);
+        }
+        if (groups['Family support'] > 0) {
+            items.push(`You're sending ${fmt(groups['Family support'])} a month to family, about ${Math.round((groups['Family support'] / income) * 100)}% of your income. Treating it as a fixed bill helps protect it. Transfer fees and exchange rates vary a lot between banks and money transfer services, so comparing two or three options for regular transfers can mean more of your money reaches the people you're supporting.`);
         }
         const savingsShare = groups.Savings / income;
         if (savingsShare < 0.1 && diff >= 0) {

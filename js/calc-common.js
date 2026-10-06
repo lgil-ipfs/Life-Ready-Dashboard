@@ -16,7 +16,7 @@ const PALETTE = {
     danger: '#B4472F',
     dangerFill: 'rgba(180, 71, 47, 0.1)',
     muted: '#6B6B6E',
-    categorical: ['#D49424', '#2F2F30', '#B4472F', '#8C8C90', '#E3AB4F', '#5E5E62', '#C9B48A', '#A3683A', '#D7D2C8'],
+    categorical: ['#D49424', '#2F2F30', '#B4472F', '#8C8C90', '#E3AB4F', '#3D6B4F', '#5E5E62', '#C9B48A', '#A3683A', '#D7D2C8'],
 };
 
 if (window.Chart) {
