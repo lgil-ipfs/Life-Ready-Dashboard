@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Life Ready</title>
+  <rect width="64" height="64" rx="14" fill="#FAF8F4"/>
+  <path d="M29.3 58.5 L30.4 43.5 L23.6 36.8 L25.6 35.2 L31.1 40.4 L32 32 L32.9 40.4 L38.4 35.2 L40.4 36.8 L33.6 43.5 L34.7 58.5 Z" fill="#2F2F30"/>
+  <g fill="#D49424">
+    <ellipse cx="12.98" cy="36.68" rx="1.85" ry="4.0" transform="rotate(-108.0 12.98 36.68)"/>
+    <ellipse cx="12.00" cy="30.50" rx="1.85" ry="4.0" transform="rotate(-90.0 12.00 30.50)"/>
+    <ellipse cx="12.98" cy="24.32" rx="1.85" ry="4.0" transform="rotate(-72.0 12.98 24.32)"/>
+    <ellipse cx="15.82" cy="18.74" rx="1.85" ry="4.0" transform="rotate(-54.0 15.82 18.74)"/>
+    <ellipse cx="20.24" cy="14.32" rx="1.85" ry="4.0" transform="rotate(-36.0 20.24 14.32)"/>
+    <ellipse cx="25.82" cy="11.48" rx="1.85" ry="4.0" transform="rotate(-18.0 25.82 11.48)"/>
+    <ellipse cx="32.00" cy="10.50" rx="1.85" ry="4.0" transform="rotate(0.0 32.00 10.50)"/>
+    <ellipse cx="38.18" cy="11.48" rx="1.85" ry="4.0" transform="rotate(18.0 38.18 11.48)"/>
+    <ellipse cx="43.76" cy="14.32" rx="1.85" ry="4.0" transform="rotate(36.0 43.76 14.32)"/>
+    <ellipse cx="48.18" cy="18.74" rx="1.85" ry="4.0" transform="rotate(54.0 48.18 18.74)"/>
+    <ellipse cx="51.02" cy="24.32" rx="1.85" ry="4.0" transform="rotate(72.0 51.02 24.32)"/>
+    <ellipse cx="52.00" cy="30.50" rx="1.85" ry="4.0" transform="rotate(90.0 52.00 30.50)"/>
+    <ellipse cx="51.02" cy="36.68" rx="1.85" ry="4.0" transform="rotate(108.0 51.02 36.68)"/>
+    <ellipse cx="18.80" cy="32.83" rx="1.75" ry="3.7" transform="rotate(-100.0 18.80 32.83)"/>
+    <ellipse cx="18.90" cy="27.66" rx="1.75" ry="3.7" transform="rotate(-77.8 18.90 27.66)"/>
+    <ellipse cx="20.95" cy="22.92" rx="1.75" ry="3.7" transform="rotate(-55.6 20.95 22.92)"/>
+    <ellipse cx="24.64" cy="19.30" rx="1.75" ry="3.7" transform="rotate(-33.3 24.64 19.30)"/>
+    <ellipse cx="29.42" cy="17.35" rx="1.75" ry="3.7" transform="rotate(-11.1 29.42 17.35)"/>
+    <ellipse cx="34.58" cy="17.35" rx="1.75" ry="3.7" transform="rotate(11.1 34.58 17.35)"/>
+    <ellipse cx="39.36" cy="19.30" rx="1.75" ry="3.7" transform="rotate(33.3 39.36 19.30)"/>
+    <ellipse cx="43.05" cy="22.92" rx="1.75" ry="3.7" transform="rotate(55.6 43.05 22.92)"/>
+    <ellipse cx="45.10" cy="27.66" rx="1.75" ry="3.7" transform="rotate(77.8 45.10 27.66)"/>
+    <ellipse cx="45.20" cy="32.83" rx="1.75" ry="3.7" transform="rotate(100.0 45.20 32.83)"/>
+    <ellipse cx="25.10" cy="30.50" rx="1.65" ry="3.3" transform="rotate(-90.0 25.10 30.50)"/>
+    <ellipse cx="26.42" cy="26.44" rx="1.65" ry="3.3" transform="rotate(-54.0 26.42 26.44)"/>
+    <ellipse cx="29.87" cy="23.94" rx="1.65" ry="3.3" transform="rotate(-18.0 29.87 23.94)"/>
+    <ellipse cx="34.13" cy="23.94" rx="1.65" ry="3.3" transform="rotate(18.0 34.13 23.94)"/>
+    <ellipse cx="37.58" cy="26.44" rx="1.65" ry="3.3" transform="rotate(54.0 37.58 26.44)"/>
+    <ellipse cx="38.90" cy="30.50" rx="1.65" ry="3.3" transform="rotate(90.0 38.90 30.50)"/>
+    <ellipse cx="32" cy="30.0" rx="1.65" ry="3.2"/>
+  </g>
+</svg>
