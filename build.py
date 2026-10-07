@@ -50,7 +50,7 @@ PUBLISHER = {
 
 # Booking link for the "Let's Talk" buttons (Leigh's calendar). Until it is
 # set, the buttons open an email to Leigh instead.
-BOOKING_URL = ""
+BOOKING_URL = "https://cal.com/leighbgrant/let-s-connect?overlayCalendar=true"
 
 AUDIENCE = "Canadians looking to build everyday money skills, including the Life Ready Facilitated Care community"
 
